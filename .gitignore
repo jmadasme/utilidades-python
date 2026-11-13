@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.h
+google-services.json
+local.properties
+
+# Artefactos y datos de ejecución
+*.log
+*.db
+*.sqlite
+*.sqlite3
+build/
+dist/
+node_modules/
+.next/
+.gradle/
+.kotlin/
+bin/
+obj/
+.vs/
+packages/
+*.exe
+*.dll
+*.apk
+*.aab
+
+# Pipeline
+PLAN.md
+AUDIT_REPORT.md
+
+# Sistema
+.DS_Store
+.idea/
+.vscode/

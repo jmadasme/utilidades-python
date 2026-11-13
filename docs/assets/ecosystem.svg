@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="t d">
+  <title id="t">utilidades-python — mapa de las cuatro versiones</title>
+  <desc id="d">Cuatro tarjetas: SpeechToTextAuxPy usable, EncrypPython didáctica, CSJE mínima y cmdPbl stub.</desc>
+
+  <defs>
+    <style>
+      .bg    { fill: #06141b; }
+      .title { fill: #e6eef3; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 30px; font-weight: 700; letter-spacing: .5px; }
+      .sub   { fill: #a8bfcb; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14px; }
+      .name  { fill: #e6eef3; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 17px; font-weight: 700; }
+      .meta  { fill: #8fa9b8; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.5px; letter-spacing: .4px; }
+      .body  { fill: #c9d9e2; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
+      .tag   { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; }
+      .foot  { fill: #6f8b9b; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="600"/>
+
+  <!-- Encabezado -->
+  <text class="title" x="60" y="72">utilidades-python</text>
+  <text class="sub" x="60" y="102">Cuatro versiones · un mapa de madurez · snapshot 2026</text>
+  <line x1="60" y1="124" x2="1140" y2="124" stroke="#457b9d" stroke-opacity=".35" stroke-width="1"/>
+
+  <!-- Tarjeta 1: SpeechToTextAuxPy -->
+  <g>
+    <rect x="40" y="168" width="260" height="296" rx="12" fill="#0a1e27" stroke="#457b9d" stroke-opacity=".45"/>
+    <circle cx="64" cy="200" r="5" fill="#2a9d8f"/>
+    <text class="name" x="80" y="205">SpeechToTextAuxPy</text>
+    <text class="meta" x="64" y="232">WINDOWS 10 · PYTHON 3.10+</text>
+    <line x1="64" y1="246" x2="276" y2="246" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="body" x="64" y="272">Voz a texto continuo</text>
+    <text class="body" x="64" y="294">SAPI + System.Speech</text>
+    <text class="body" x="64" y="316">pythonnet (clr)</text>
+    <text class="body" x="64" y="338">444 líneas · 3 módulos</text>
+    <text class="body" x="64" y="360">2 dependencias</text>
+    <rect x="64" y="404" width="112" height="28" rx="14" fill="#2a9d8f" fill-opacity=".14" stroke="#2a9d8f" stroke-opacity=".55"/>
+    <text class="tag" x="120" y="423" text-anchor="middle" fill="#2a9d8f">USABLE</text>
+  </g>
+
+  <!-- Tarjeta 2: EncrypPython -->
+  <g>
+    <rect x="320" y="168" width="260" height="296" rx="12" fill="#0a1e27" stroke="#457b9d" stroke-opacity=".45"/>
+    <circle cx="344" cy="200" r="5" fill="#457b9d"/>
+    <text class="name" x="360" y="205">EncrypPython</text>
+    <text class="meta" x="344" y="232">MULTIPLATAFORMA · PYTHON 3</text>
+    <line x1="344" y1="246" x2="556" y2="246" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="body" x="344" y="272">15 scripts sueltos</text>
+    <text class="body" x="344" y="294">AES · RSA · SHA-256 · MD5</text>
+    <text class="body" x="344" y="316">Base64 · XOR · César</text>
+    <text class="body" x="344" y="338">442 líneas</text>
+    <text class="body" x="344" y="360">2 librerías opcionales</text>
+    <rect x="344" y="404" width="126" height="28" rx="14" fill="#457b9d" fill-opacity=".14" stroke="#457b9d" stroke-opacity=".55"/>
+    <text class="tag" x="407" y="423" text-anchor="middle" fill="#6fa3c4">DIDÁCTICA</text>
+  </g>
+
+  <!-- Tarjeta 3: CSJE -->
+  <g>
+    <rect x="600" y="168" width="260" height="296" rx="12" fill="#0a1e27" stroke="#457b9d" stroke-opacity=".45"/>
+    <circle cx="624" cy="200" r="5" fill="#5b7c99"/>
+    <text class="name" x="640" y="205">CSJE</text>
+    <text class="meta" x="624" y="232">MULTIPLATAFORMA · PYTHON 3</text>
+    <line x1="624" y1="246" x2="836" y2="246" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="body" x="624" y="272">sumar(a, b)</text>
+    <text class="body" x="624" y="294">2 líneas</text>
+    <text class="body" x="624" y="316">sin CLI</text>
+    <text class="body" x="624" y="338">sin tests</text>
+    <text class="body" x="624" y="360">sin dependencias</text>
+    <rect x="624" y="404" width="112" height="28" rx="14" fill="#5b7c99" fill-opacity=".14" stroke="#5b7c99" stroke-opacity=".6"/>
+    <text class="tag" x="680" y="423" text-anchor="middle" fill="#8fa6bb">MÍNIMA</text>
+  </g>
+
+  <!-- Tarjeta 4: cmdPbl -->
+  <g>
+    <rect x="880" y="168" width="260" height="296" rx="12" fill="#0a1e27" stroke="#5b7c99" stroke-opacity=".45" stroke-dasharray="6 5"/>
+    <circle cx="904" cy="200" r="5" fill="#5b7c99" fill-opacity=".6"/>
+    <text class="name" x="920" y="205">cmdPbl</text>
+    <text class="meta" x="904" y="232">GITHUB ACTIONS · DETENIDO</text>
+    <line x1="904" y1="246" x2="1116" y2="246" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="body" x="904" y="272">main.yml.stop</text>
+    <text class="body" x="904" y="294">36 líneas de workflow</text>
+    <text class="body" x="904" y="316">sin scriptAgrega.py</text>
+    <text class="body" x="904" y="338">sin firma.py</text>
+    <text class="body" x="904" y="360">sin token</text>
+    <rect x="904" y="404" width="96" height="28" rx="14" fill="#5b7c99" fill-opacity=".10" stroke="#5b7c99" stroke-opacity=".45" stroke-dasharray="4 3"/>
+    <text class="tag" x="952" y="423" text-anchor="middle" fill="#8fa6bb">STUB</text>
+  </g>
+
+  <!-- Leyenda -->
+  <line x1="60" y1="502" x2="1140" y2="502" stroke="#457b9d" stroke-opacity=".2"/>
+  <circle cx="66" cy="534" r="4" fill="#2a9d8f"/>
+  <text class="foot" x="78" y="538">usable</text>
+  <circle cx="176" cy="534" r="4" fill="#457b9d"/>
+  <text class="foot" x="188" y="538">didáctica</text>
+  <circle cx="306" cy="534" r="4" fill="#5b7c99"/>
+  <text class="foot" x="318" y="538">mínima</text>
+  <circle cx="416" cy="534" r="4" fill="#5b7c99" fill-opacity=".5"/>
+  <text class="foot" x="428" y="538">stub</text>
+  <text class="foot" x="1140" y="538" text-anchor="end">888 líneas de Python · 4 versiones · licencia MIT</text>
+</svg>

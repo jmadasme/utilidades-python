@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="t d">
+  <title id="t">Taxonomía de los 15 scripts de EncrypPython</title>
+  <desc id="d">Cinco familias: codificación, hash, cifrado clásico, cifrado moderno y ofuscación, con el nivel de seguridad de cada script.</desc>
+
+  <defs>
+    <style>
+      .bg    { fill: #06141b; }
+      .title { fill: #e6eef3; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 26px; font-weight: 700; letter-spacing: .4px; }
+      .sub   { fill: #a8bfcb; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+      .fam   { fill: #e6eef3; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; }
+      .cnt   { fill: #8fa6bb; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px; letter-spacing: .8px; }
+      .item  { fill: #c9d9e2; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
+      .attr  { fill: #6f8b9b; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 9px; }
+      .foot  { fill: #6f8b9b; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
+      .chip  { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px; font-weight: 700; letter-spacing: .8px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="760"/>
+
+  <text class="title" x="35" y="56">EncrypPython · taxonomía de 15 scripts</text>
+  <text class="sub" x="35" y="82">qué hace cada familia y cuánto protege realmente</text>
+  <line x1="35" y1="100" x2="1165" y2="100" stroke="#457b9d" stroke-opacity=".3"/>
+
+  <!-- Familia 1: Codificación -->
+  <g>
+    <rect x="35" y="132" width="212" height="452" rx="12" fill="#0a1e27" stroke="#457b9d" stroke-opacity=".4"/>
+    <rect x="35" y="132" width="212" height="62" rx="12" fill="#457b9d" fill-opacity=".13"/>
+    <text class="fam" x="51" y="162">Codificación</text>
+    <text class="cnt" x="51" y="180">3 SCRIPTS · RFC 4648</text>
+
+    <rect x="51" y="216" width="180" height="30" rx="6" fill="#06141b" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="item" x="61" y="236">base16.py</text>
+    <text class="attr" x="221" y="236" text-anchor="end">hex</text>
+
+    <rect x="51" y="254" width="180" height="30" rx="6" fill="#06141b" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="item" x="61" y="274">64.py</text>
+    <text class="attr" x="221" y="274" text-anchor="end">base64</text>
+
+    <rect x="51" y="292" width="180" height="30" rx="6" fill="#06141b" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="item" x="61" y="312">xxd.py</text>
+    <text class="attr" x="221" y="312" text-anchor="end">hexlify</text>
+
+    <text class="foot" x="51" y="360">No cifra.</text>
+    <text class="foot" x="51" y="378">Solo transporta.</text>
+    <rect x="51" y="524" width="122" height="26" rx="13" fill="#457b9d" fill-opacity=".12" stroke="#457b9d" stroke-opacity=".5"/>
+    <text class="chip" x="112" y="541" text-anchor="middle" fill="#7fa8c8">REVERSIBLE</text>
+  </g>
+
+  <!-- Familia 2: Hash -->
+  <g>
+    <rect x="267" y="132" width="212" height="452" rx="12" fill="#0a1e27" stroke="#457b9d" stroke-opacity=".4"/>
+    <rect x="267" y="132" width="212" height="62" rx="12" fill="#457b9d" fill-opacity=".13"/>
+    <text class="fam" x="283" y="162">Hash</text>
+    <text class="cnt" x="283" y="180">2 SCRIPTS · FIPS 180-4</text>
+
+    <rect x="283" y="216" width="180" height="30" rx="6" fill="#06141b" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="item" x="293" y="236">md5.py</text>
+    <text class="attr" x="453" y="236" text-anchor="end">roto</text>
+
+    <rect x="283" y="254" width="180" height="30" rx="6" fill="#06141b" stroke="#457b9d" stroke-opacity=".25"/>
+    <text class="item" x="293" y="274">sha256.py</text>
+    <text class="attr" x="453" y="274" text-anchor="end">vigente</text>
+
+    <text class="foot" x="283" y="322">Integridad, no</text>
+    <text class="foot" x="283" y="340">confidencialidad.</text>
+    <text class="foot" x="283" y="358">No se revierte.</text>
+    <rect x="283" y="524" width="118" height="26" rx="13" fill="#5b7c99" fill-opacity=".12" stroke="#5b7c99" stroke-opacity=".5"/>
+    <text class="chip" x="342" y="541" text-anchor="middle" fill="#8fa6bb">UN SENTIDO</text>
+  </g>
+
+  <!-- Familia 3: Clásico -->
+  <g>
+    <rect x="499" y="132" width="212" height="452" rx="12" fill="#0a1e27" stroke="#5b7c99" stroke-opacity=".4"/>
+    <rect x="499" y="132" width="212" height="62" rx="12" fill="#5b7c99" fill-opacity=".13"/>
+    <text class="fam" x="515" y="162">Cifrado clásico</text>
+    <text class="cnt" x="515" y="180">5 SCRIPTS · PRE-COMPUTACIONAL</text>
+
+    <rect x="515" y="200" width="180" height="26" rx="6" fill="#06141b" stroke="#5b7c99" stroke-opacity=".25"/>
+    <text class="item" x="525" y="218">cesar.py</text>
+    <text class="attr" x="685" y="218" text-anchor="end">ASCII</text>
+
+    <rect x="515" y="232" width="180" height="26" rx="6" fill="#06141b" stroke="#5b7c99" stroke-opacity=".25"/>
+    <text class="item" x="525" y="250">xor.py</text>
+    <text class="attr" x="685" y="250" text-anchor="end">1 byte</text>
+
+    <rect x="515" y="264" width="180" height="26" rx="6" fill="#06141b" stroke="#5b7c99" stroke-opacity=".25"/>
+    <text class="item" x="525" y="282">bin.py</text>
+    <text class="attr" x="685" y="282" text-anchor="end">involución</text>
+
+    <rect x="515" y="296" width="180" height="26" rx="6" fill="#06141b" stroke="#5b7c99" stroke-opacity=".25"/>
+    <text class="item" x="525" y="314">transposicion.py</text>
+    <text class="attr" x="685" y="314" text-anchor="end">pierde relleno</text>
+
+    <rect x="515" y="328" width="180" height="26" rx="6" fill="#06141b" stroke="#5b7c99" stroke-opacity=".25"/>
+    <text class="item" x="525" y="346">rot13.py</text>
+    <text class="attr" x="685" y="346" text-anchor="end">es XOR</text>
+
+    <text class="foot" x="515" y="394">Quebrables por</text>
+    <text class="foot" x="515" y="412">fuerza bruta o</text>
+    <text class="foot" x="515" y="430">frecuencia.</text>
+    <rect x="515" y="524" width="112" height="26" rx="13" fill="#5b7c99" fill-opacity=".12" stroke="#5b7c99" stroke-opacity=".5"/>
+    <text class="chip" x="571" y="541" text-anchor="middle" fill="#8fa6bb">QUEBRABLE</text>
+  </g>
+
+  <!-- Familia 4: Moderno -->
+  <g>
+    <rect x="731" y="132" width="212" height="452" rx="12" fill="#0a1e27" stroke="#2a9d8f" stroke-opacity=".4"/>
+    <rect x="731" y="132" width="212" height="62" rx="12" fill="#2a9d8f" fill-opacity=".12"/>
+    <text class="fam" x="747" y="162">Cifrado moderno</text>
+    <text class="cnt" x="747" y="180">3 SCRIPTS · PRIMITIVAS REALES</text>
+
+    <rect x="747" y="200" width="180" height="26" rx="6" fill="#06141b" stroke="#2a9d8f" stroke-opacity=".25"/>
+    <text class="item" x="757" y="218">aes.py</text>
+    <text class="attr" x="917" y="218" text-anchor="end">AES-128-CBC</text>
+
+    <rect x="747" y="232" width="180" height="26" rx="6" fill="#06141b" stroke="#2a9d8f" stroke-opacity=".25"/>
+    <text class="item" x="757" y="250">AES-256.py</text>
+    <text class="attr" x="917" y="250" text-anchor="end">ECDH + PBKDF2</text>
+
+    <rect x="747" y="264" width="180" height="26" rx="6" fill="#06141b" stroke="#2a9d8f" stroke-opacity=".25"/>
+    <text class="item" x="757" y="282">rsa.py</text>
+    <text class="attr" x="917" y="282" text-anchor="end">OAEP 2048</text>
+
+    <text class="foot" x="747" y="330">Primitivas buenas,</text>
+    <text class="foot" x="747" y="348">construcción mala:</text>
+    <text class="foot" x="747" y="366">clave fija, sin MAC,</text>
+    <text class="foot" x="747" y="384">doble PBKDF2.</text>
+    <rect x="747" y="524" width="126" height="26" rx="13" fill="#2a9d8f" fill-opacity=".10" stroke="#2a9d8f" stroke-opacity=".45"/>
+    <text class="chip" x="810" y="541" text-anchor="middle" fill="#5fc0b1">SOLO DEMO</text>
+  </g>
+
+  <!-- Familia 5: Ofuscación -->
+  <g>
+    <rect x="963" y="132" width="212" height="452" rx="12" fill="#0a1e27" stroke="#5b7c99" stroke-opacity=".4"/>
+    <rect x="963" y="132" width="212" height="62" rx="12" fill="#5b7c99" fill-opacity=".13"/>
+    <text class="fam" x="979" y="162">Ofuscación</text>
+    <text class="cnt" x="979" y="180">2 SCRIPTS · NO CRIPTO</text>
+
+    <rect x="979" y="216" width="180" height="30" rx="6" fill="#06141b" stroke="#5b7c99" stroke-opacity=".25"/>
+    <text class="item" x="989" y="236">ofusca.py</text>
+    <text class="attr" x="1149" y="236" text-anchor="end">95 símbolos</text>
+
+    <rect x="979" y="254" width="180" height="30" rx="6" fill="#06141b" stroke="#5b7c99" stroke-opacity=".25"/>
+    <text class="item" x="989" y="274">flujo_bytes.py</text>
+    <text class="attr" x="1149" y="274" text-anchor="end">100 símbolos</text>
+
+    <text class="foot" x="979" y="322">Mapeo aleatorio</text>
+    <text class="foot" x="979" y="340">no persistido:</text>
+    <text class="foot" x="979" y="358">no se recupera</text>
+    <text class="foot" x="979" y="376">en otra corrida.</text>
+    <rect x="979" y="524" width="112" height="26" rx="13" fill="#5b7c99" fill-opacity=".12" stroke="#5b7c99" stroke-opacity=".5"/>
+    <text class="chip" x="1035" y="541" text-anchor="middle" fill="#8fa6bb">NO CRIPTO</text>
+  </g>
+
+  <!-- Pie -->
+  <line x1="35" y1="624" x2="1165" y2="624" stroke="#457b9d" stroke-opacity=".2"/>
+  <text class="foot" x="35" y="652">* rot13.py contiene una implementación de XOR, no ROT13.</text>
+  <text class="foot" x="35" y="672">Ninguno de los 15 scripts debe proteger información real.</text>
+  <text class="foot" x="1165" y="652" text-anchor="end">442 líneas · 15 archivos</text>
+  <text class="foot" x="1165" y="672" text-anchor="end">2 librerías: pycryptodome · cryptography</text>
+
+  <!-- Barra de proporción -->
+  <rect x="35" y="700" width="140" height="10" rx="5" fill="#457b9d" fill-opacity=".7"/>
+  <rect x="175" y="700" width="93" height="10" rx="0" fill="#457b9d" fill-opacity=".45"/>
+  <rect x="268" y="700" width="233" height="10" rx="0" fill="#5b7c99" fill-opacity=".55"/>
+  <rect x="501" y="700" width="140" height="10" rx="0" fill="#2a9d8f" fill-opacity=".7"/>
+  <rect x="641" y="700" width="93" height="10" rx="0" fill="#5b7c99" fill-opacity=".35"/>
+  <rect x="734" y="700" width="431" height="10" rx="5" fill="#06141b" stroke="#457b9d" stroke-opacity=".2"/>
+  <text class="foot" x="35" y="728">3 codificación · 2 hash · 5 clásico · 3 moderno · 2 ofuscación</text>
+</svg>

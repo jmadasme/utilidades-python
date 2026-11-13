@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Cadena de audio a texto de SpeechToTextAuxPy</title>
+  <desc id="d">Recorrido desde el micrófono o line-in hasta la consola, pasando por ADC, SAPI, System.Speech, pythonnet y SapiEngine.</desc>
+
+  <defs>
+    <style>
+      .bg    { fill: #06141b; }
+      .title { fill: #e6eef3; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 26px; font-weight: 700; letter-spacing: .4px; }
+      .sub   { fill: #a8bfcb; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+      .box   { fill: #0a1e27; stroke: #457b9d; stroke-opacity: .5; }
+      .box2  { fill: #0a1e27; stroke: #2a9d8f; stroke-opacity: .45; }
+      .h     { fill: #e6eef3; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14.5px; font-weight: 700; }
+      .s     { fill: #9fb8c6; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
+      .sig   { fill: #5b7c99; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px; letter-spacing: .6px; }
+      .foot  { fill: #6f8b9b; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
+      .arrow { stroke: #2a9d8f; stroke-width: 1.6; fill: none; }
+    </style>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2a9d8f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="620"/>
+
+  <text class="title" x="50" y="58">SpeechToTextAuxPy · cadena de audio a texto</text>
+  <text class="sub" x="50" y="84">de la onda sonora al timestamp en consola</text>
+  <line x1="50" y1="102" x2="1150" y2="102" stroke="#457b9d" stroke-opacity=".3"/>
+
+  <!-- Fila 1 -->
+  <g>
+    <rect class="box" x="50" y="150" width="240" height="128" rx="10"/>
+    <text class="h" x="70" y="182">Micrófono / line-in</text>
+    <text class="s" x="70" y="208">transductor → tensión</text>
+    <text class="s" x="70" y="228">jack 3.5 mm TRS</text>
+    <text class="s" x="70" y="248">señal analógica</text>
+  </g>
+
+  <line class="arrow" x1="290" y1="214" x2="330" y2="214" marker-end="url(#a)"/>
+  <text class="sig" x="310" y="200" text-anchor="middle">onda</text>
+
+  <g>
+    <rect class="box" x="330" y="150" width="240" height="128" rx="10"/>
+    <text class="h" x="350" y="182">ADC + Windows</text>
+    <text class="s" x="350" y="208">muestreo PCM</text>
+    <text class="s" x="350" y="228">16 bit · 44.1 kHz</text>
+    <text class="s" x="350" y="248">dispositivo predeterminado</text>
+  </g>
+
+  <line class="arrow" x1="570" y1="214" x2="610" y2="214" marker-end="url(#a)"/>
+  <text class="sig" x="590" y="200" text-anchor="middle">PCM</text>
+
+  <g>
+    <rect class="box" x="610" y="150" width="240" height="128" rx="10"/>
+    <text class="h" x="630" y="182">SAPI · System.Speech</text>
+    <text class="s" x="630" y="208">SpeechRecognitionEngine</text>
+    <text class="s" x="630" y="228">DictationGrammar es-ES</text>
+    <text class="s" x="630" y="248">modelo acústico + lenguaje</text>
+  </g>
+
+  <line class="arrow" x1="850" y1="214" x2="890" y2="214" marker-end="url(#a)"/>
+  <text class="sig" x="870" y="200" text-anchor="middle">evento</text>
+
+  <g>
+    <rect class="box" x="890" y="150" width="240" height="128" rx="10"/>
+    <text class="h" x="910" y="182">pythonnet (clr)</text>
+    <text class="s" x="910" y="208">AddReference("System.Speech")</text>
+    <text class="s" x="910" y="228">puente Python ↔ .NET</text>
+    <text class="s" x="910" y="248">CLR en el proceso</text>
+  </g>
+
+  <!-- Bajada -->
+  <path class="arrow" d="M 1010 278 L 1010 350" marker-end="url(#a)"/>
+  <text class="sig" x="1024" y="318">SpeechRecognized</text>
+
+  <!-- Fila 2 (derecha a izquierda) -->
+  <g>
+    <rect class="box2" x="890" y="356" width="240" height="128" rx="10"/>
+    <text class="h" x="910" y="388">SapiEngine</text>
+    <text class="s" x="910" y="414">_on_speech_recognized()</text>
+    <text class="s" x="910" y="434">args.Result.Text</text>
+    <text class="s" x="910" y="454">RecognizeMode.Multiple</text>
+  </g>
+
+  <line class="arrow" x1="890" y1="420" x2="850" y2="420" marker-end="url(#a)"/>
+  <text class="sig" x="870" y="406" text-anchor="middle">str</text>
+
+  <g>
+    <rect class="box" x="610" y="356" width="240" height="128" rx="10"/>
+    <text class="h" x="630" y="388">console_utils</text>
+    <text class="s" x="630" y="414">print_recognized()</text>
+    <text class="s" x="630" y="434">colorama · fallback vacío</text>
+    <text class="s" x="630" y="454">timestamp HH:MM:SS</text>
+  </g>
+
+  <line class="arrow" x1="610" y1="420" x2="570" y2="420" marker-end="url(#a)"/>
+  <text class="sig" x="590" y="406" text-anchor="middle">stdout</text>
+
+  <g>
+    <rect class="box" x="330" y="356" width="240" height="128" rx="10"/>
+    <text class="h" x="350" y="388">Consola Windows</text>
+    <text class="s" x="350" y="414">[10:15:35] texto</text>
+    <text class="s" x="350" y="434">UTF-8 · chcp 65001</text>
+    <text class="s" x="350" y="454">Ctrl+C → stop() → exit 0</text>
+  </g>
+
+  <!-- Nota lateral -->
+  <g>
+    <rect x="50" y="356" width="240" height="128" rx="10" fill="none" stroke="#5b7c99" stroke-opacity=".4" stroke-dasharray="5 4"/>
+    <text class="s" x="70" y="386" fill="#8fa6bb">requisitos</text>
+    <text class="s" x="70" y="408" fill="#8fa6bb">Windows 10</text>
+    <text class="s" x="70" y="428" fill="#8fa6bb">.NET Framework 4.7.2+</text>
+    <text class="s" x="70" y="448" fill="#8fa6bb">paquete de voz es-ES</text>
+    <text class="s" x="70" y="468" fill="#8fa6bb">pythonnet ≥ 3.0.0</text>
+  </g>
+
+  <line x1="50" y1="536" x2="1150" y2="536" stroke="#457b9d" stroke-opacity=".2"/>
+  <text class="foot" x="50" y="564">verde petróleo = flujo de datos</text>
+  <text class="foot" x="1150" y="564" text-anchor="end">444 líneas · 3 módulos · 2 dependencias</text>
+</svg>
