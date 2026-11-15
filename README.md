@@ -938,3 +938,54 @@ Documentación completa en [`docs/REFERENCES.md`](docs/REFERENCES.md).
 <p align="center">
   <sub>utilidades-python · 2026</sub>
 </p>
+
+## Ficha de evaluación
+
+**Madurez global: 3.5/5**
+
+| Criterio | Nota | Evidencia |
+|---|---:|---|
+| Madurez | 2/5 | Una utilidad usable y tres experimentos con fallos documentados; sin pruebas. |
+| Reproducibilidad | 3/5 | SpeechToTextAuxPy requiere Windows y voz instalada; el resto son scripts sueltos. |
+| Documentación | 5/5 | README y bitácora explican cada fallo, su causa y la corrección esperada. |
+| Honestidad de límites | 5/5 | Declara claves hardcodeadas, errores criptográficos sin corregir y piezas privadas ausentes. |
+| Valor demostrativo | 3/5 | Buen ejemplo de deuda técnica y de cuándo un script no debe usarse. |
+| Facilidad de despliegue | 3/5 | La utilidad de voz es simple en Windows; las demás carecen de empaquetado. |
+
+Instantánea honesta de utilidades dispares: una herramienta de voz funcional y varios ejercicios didácticos que valen más como lección sobre errores que como software reutilizable.
+
+## Lo que no funcionó
+
+### EncrypPython — ECDH que no converge
+
+En _AES-256.py cada parte genera una sal distinta dentro de obtener_secreto_compartido, por lo que secret_key_1 y secret_key_2 nunca coinciden y el propio script imprime 'Secretos coinciden: False'. El README documenta el fallo y la corrección esperada: compartir la sal por el protocolo y derivar con HKDF.
+
+### EncrypPython — PBKDF2 aplicado dos veces
+
+descifrar_aes() vuelve a derivar con PBKDF2 sobre una clave que ya estaba derivada, de modo que el unpad falla o devuelve texto basura. El README identifica la doble derivación como causa y deja el script como ejemplo de error, sin presentarlo como una implementación cifrada utilizable.
+
+### SpeechToTextAuxPy — signal.pause() inexistente en Windows
+
+El bucle principal llama a signal.pause(), que no existe en Windows; cada iteración lanza AttributeError, la captura y continúa tras dormir 500 ms. La herramienta funciona, pero con una excepción por ciclo. El README registra el comportamiento y lo describe como deuda técnica visible en la bitácora.
+
+### cmdPbl — Workflow detenido
+
+cmdPbl conserva un workflow main.yml.stop y referencias a scriptAgrega.py y firma.py que no están en el repositorio; además, el destino es privado y requiere token. No puede ejecutarse tal como se publica. El README lo presenta como esqueleto y no como automatización operativa.
+
+## Preguntas típicas
+
+**¿Qué es este proyecto?**
+
+Una instantánea de cuatro utilidades: dictado por voz con SAPI en Windows, scripts didácticos de criptografía, una función de suma y un esqueleto de automatización.
+
+**¿Cuál se puede usar directamente?**
+
+SpeechToTextAuxPy, en Windows 10 con pythonnet y el motor de voz del sistema; no guarda audio, no elige dispositivo y no añade puntuación.
+
+**¿Los scripts de cifrado son seguros?**
+
+No. _AES-256.py no converge en ECDH, descifrar_aes() aplica PBKDF2 dos veces y hay CBC sin MAC; el README los presenta como ejercicios con errores documentados.
+
+**¿Qué se puede reutilizar?**
+
+El dictado continuo en español y los códigos de salida de SpeechToTextAuxPy, y los scripts de cifrado como material de estudio; cmdPbl no es ejecutable porque faltan scripts y el repo destino es privado.

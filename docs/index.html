@@ -134,7 +134,76 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:
   .stat{border-right:0;border-bottom:1px solid var(--line)}
   h1{font-size:42px}
 }
-.gate{display:grid;grid-template-columns:1.35fr .85fr;gap:26px;align-items:center;border:1px solid var(--line);border-radius:20px;padding:26px;background:linear-gradient(135deg,rgba(42,157,143,.12),rgba(69,123,157,.08));margin:22px 0 24px}.gate-badge{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--accent);border:1px solid rgba(42,157,143,.35);padding:6px 10px;border-radius:999px;margin-bottom:12px}.gate-actions{display:flex;flex-direction:column;gap:10px;align-items:stretch}.version.private{border-style:dashed;background:linear-gradient(180deg,rgba(11,34,43,.55),rgba(6,20,27,.7))}.version .state{font-family:var(--mono);font-size:9px;letter-spacing:.12em;padding:4px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}.state.pub{color:#2A9D8F;border-color:rgba(42,157,143,.4);background:rgba(42,157,143,.08)}.state.priv{color:#9ab;border-color:rgba(91,124,153,.45);background:rgba(91,124,153,.08)}.private-link{color:#9ab;cursor:pointer}@media(max-width:820px){.gate{grid-template-columns:1fr}}</style>
+.gate{display:grid;grid-template-columns:1.35fr .85fr;gap:26px;align-items:center;border:1px solid var(--line);border-radius:20px;padding:26px;background:linear-gradient(135deg,rgba(42,157,143,.12),rgba(69,123,157,.08));margin:22px 0 24px}.gate-badge{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--accent);border:1px solid rgba(42,157,143,.35);padding:6px 10px;border-radius:999px;margin-bottom:12px}.gate-actions{display:flex;flex-direction:column;gap:10px;align-items:stretch}.version.private{border-style:dashed;background:linear-gradient(180deg,rgba(11,34,43,.55),rgba(6,20,27,.7))}.version .state{font-family:var(--mono);font-size:9px;letter-spacing:.12em;padding:4px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}.state.pub{color:#2A9D8F;border-color:rgba(42,157,143,.4);background:rgba(42,157,143,.08)}.state.priv{color:#9ab;border-color:rgba(91,124,153,.45);background:rgba(91,124,153,.08)}.private-link{color:#9ab;cursor:pointer}@media(max-width:820px){.gate{grid-template-columns:1fr}}
+/* ── Contenido heredado del proyecto original, en clave sobria ── */
+.rich{max-width:78ch}
+.rich p{margin:0 0 14px;color:#c3d4da}
+.rich h3{margin:26px 0 10px;font-size:19px;letter-spacing:-.02em}
+.rich h4{margin:22px 0 8px;font-size:15px;letter-spacing:-.01em}
+.rich ul,.rich ol{margin:0 0 16px;padding-left:22px;color:#c3d4da}
+.rich li{margin:0 0 6px}
+.rich figure{margin:22px 0;border:1px solid var(--line);border-radius:16px;padding:10px;background:rgba(11,34,43,.5)}
+.rich figure img{width:100%;display:block;border-radius:10px}
+.rich figcaption{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:9px;line-height:1.5}
+.rich .table-wrap{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:12px}
+.rich table{border-collapse:collapse;width:100%;font-size:13.5px}
+.rich th,.rich td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.rich th{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:rgba(11,34,43,.6)}
+.rich tr:last-child td{border-bottom:0}
+.rich pre{margin:18px 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:#04141a;overflow-x:auto;font-family:var(--mono);font-size:12px;line-height:1.6;color:#cfe3e8}
+.rich code{font-family:var(--mono);font-size:.92em}
+.rich .note{margin:18px 0;padding:13px 16px;border-left:2px solid var(--accent);background:rgba(42,157,143,.07);color:#c3d4da;font-size:14px}
+.rich .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+.rich .card-grid .card{margin:0}
+
+
+.rich h3{margin:26px 0 8px}
+.rich p{margin:0 0 14px;color:var(--muted);line-height:1.7}
+.fail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:6px}
+.fail{background:rgba(11,34,43,.55);border:1px solid var(--line);border-radius:14px;padding:18px}
+.fail .v{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--warm,#D6A86A)}
+.fail h3{font-size:16px;margin:8px 0 6px}
+.fail p{font-size:14px;margin:0;color:var(--muted)}
+.rating-head{display:flex;align-items:center;gap:20px;margin:6px 0 18px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:rgba(11,34,43,.55)}
+.rating-avg{font-family:var(--mono);font-size:40px;line-height:1;color:var(--accent)}
+.rating-avg small{font-size:14px;color:var(--muted)}
+.rating-head p{margin:4px 0 0;font-size:14px;color:var(--muted);max-width:70ch}
+.rating{display:grid;gap:2px}
+.rating-row{display:grid;grid-template-columns:165px minmax(90px,1fr) 48px;gap:14px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}
+.rating-row:last-child{border-bottom:0}
+.rating-name{font-size:13.5px;font-weight:600}
+.rating-bar{height:6px;border-radius:99px;background:rgba(148,190,200,.14);overflow:hidden}
+.rating-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.rating-score{font-family:var(--mono);font-size:12.5px;color:var(--accent);text-align:right}
+.rating-note{grid-column:2/-1;font-size:12.5px;color:var(--muted);margin-top:-4px}
+.faq{display:grid;gap:0;margin-top:4px}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:15px;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"+";display:inline-block;width:18px;color:var(--accent);font-family:var(--mono)}
+.faq details[open] summary::before{content:"–"}
+.faq p{margin:10px 0 0 18px;font-size:14px;color:var(--muted)}
+@media(max-width:720px){
+  .fail-grid{grid-template-columns:1fr}
+  .rating-head{flex-direction:column;align-items:flex-start}
+  .rating-row{grid-template-columns:120px 1fr 44px}
+}
+
+
+.detail h2{margin:34px 0 10px;font-size:24px;letter-spacing:-.02em}
+.detail h3{margin:24px 0 8px;font-size:17px}
+.detail p{margin:0 0 14px;color:var(--muted);line-height:1.75}
+.detail ul,.detail ol{margin:0 0 16px 20px;color:var(--muted)}
+.detail li{margin:6px 0}
+.detail table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+.detail th,.detail td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.detail th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.detail pre{background:rgba(6,20,27,.75);border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto;font-size:13px}
+.detail code{font-family:var(--mono);font-size:.92em}
+.detail img{max-width:100%;border-radius:12px;border:1px solid var(--line)}
+.detail blockquote{border-left:2px solid var(--accent);margin:14px 0;padding:2px 0 2px 16px;color:var(--muted)}
+
+</style>
 <link rel="stylesheet" href="assets/community.css?v=1">
 </head>
 <body>
@@ -169,80 +238,1645 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:
   </div>
 </div></section>
 
-<section class="stats"><div class="wrap stats-grid"><div class="stat"><div class="stat-num">4</div><div class="stat-label">versiones</div></div><div class="stat"><div class="stat-num">1</div><div class="stat-label">pública</div></div><div class="stat"><div class="stat-num">3</div><div class="stat-label">privadas</div></div><div class="stat"><div class="stat-num">1</div><div class="stat-label">licencia</div></div></div></section>
+<section class="stats"><div class="wrap stats-grid"><div class="stat"><div class="stat-num">4</div><div class="stat-label">versiones</div></div><div class="stat"><div class="stat-num">1</div><div class="stat-label">pública</div></div><div class="stat"><div class="stat-num">3</div><div class="stat-label">privadas</div></div><div class="stat"><div class="stat-num">1</div><div class="stat-label">licencia</div></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">El concepto</div><h2>Qué es y por qué existe</h2></div><div class="rich reveal"><p>Colección de cuatro utilidades independientes en Python, conservadas como instantánea de experimentos: dictado por voz con SAPI en Windows, scripts didácticos de criptografía, una función mínima de suma y un esqueleto de automatización para un repositorio privado. Solo SpeechToTextAuxPy está publicado; las demás se solicitan.</p><p>El interés está en el contraste entre una herramienta usable y varios ejercicios con fallos conocidos. SpeechToTextAuxPy funciona en Windows 10 con pythonnet y el motor de voz del sistema, sin guardar audio ni elegir dispositivo. Los scripts de cifrado, en cambio, documentan errores de derivación de claves y de padding que el README expone sin corregir, lo que convierte al repositorio en un caso de estudio sobre límites y deuda técnica.</p></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">El proyecto en detalle</div><h2>Documentación preservada</h2><p class="section-sub">El README original, completo y en su contexto.</p></div><div class="detail rich reveal">
+<p><strong>Cuatro utilidades Python de madurez muy distinta, documentadas con el mismo nivel de detalle y distinto nivel de promesa.</strong></p>
+<p><code>SpeechToTextAuxPy</code> · <code>EncrypPython</code> · <code>CSJE</code> · <code>cmdPbl</code></p>
+<hr/>
+<blockquote>
+<p><strong>Naturaleza de este repositorio.</strong> Es un <em>snapshot de portfolio</em>: reúne cuatro versiones importadas desde repositorios independientes (<code>jmadasme/SpeechToTextAuxPy</code>, <code>jmadasme/EncrypPython</code>, <code>jmadasme/CSJE</code>, <code>jmadasme/cmdPbl</code>). <strong>No</strong> es un paquete instalable, <strong>no</strong> es una librería unificada y <strong>no</strong> hay un <code>setup.py</code> ni un <code>pyproject.toml</code> que lo integre. Es un archivo de versiones con documentación transversal, pensado para que quien lo lea entienda qué hay dentro, qué sirve y qué no.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre</strong></td>
+<td>utilidades-python</td>
+</tr>
+<tr>
+<td><strong>Tipo</strong></td>
+<td>Colección de versiones (monorepo de archivo)</td>
+</tr>
+<tr>
+<td><strong>Lenguaje</strong></td>
+<td>Python 3 (una versión requiere Windows)</td>
+</tr>
+<tr>
+<td><strong>Versiones incluidas</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Scripts Python</strong></td>
+<td>19 archivos (15 cripto + 3 voz + 1 sumador)</td>
+</tr>
+<tr>
+<td><strong>Líneas de Python</strong></td>
+<td>≈ 888</td>
+</tr>
+<tr>
+<td><strong>Dependencias externas</strong></td>
+<td><code>pythonnet</code>, <code>colorama</code> (solo SpeechToTextAuxPy)</td>
+</tr>
+<tr>
+<td><strong>Estado</strong></td>
+<td>Archivo / documentación. Una utilidad usable, una didáctica, una mínima, una vacía</td>
+</tr>
+<tr>
+<td><strong>Licencia</strong></td>
+<td>MIT</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td>jmadasme</td>
+</tr>
+<tr>
+<td><strong>Año</strong></td>
+<td>2026</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="tabla-de-contenidos">Tabla de contenidos</h2>
+<ol>
+<li><a href="#1-qué-es-este-repositorio">Qué es este repositorio</a></li>
+<li><a href="#2-mapa-de-utilidades">Mapa de utilidades</a></li>
+<li><a href="#3-requisitos-e-instalación">Requisitos e instalación</a></li>
+<li><a href="#4-speechtotextauxpy--voz-a-texto">SpeechToTextAuxPy — voz a texto</a></li>
+<li><a href="#5-encryppython--criptografía-y-codificación">EncrypPython — criptografía y codificación</a></li>
+<li><a href="#6-csje--sumador-mínimo">CSJE — sumador mínimo</a></li>
+<li><a href="#7-cmdpbl--stub">cmdPbl — stub</a></li>
+<li><a href="#8-interfaces-y-conexiones">Interfaces y conexiones</a></li>
+<li><a href="#9-ejemplos-de-uso-realistas">Ejemplos de uso realistas</a></li>
+<li><a href="#10-calibración">Calibración</a></li>
+<li><a href="#11-estado-de-madurez-y-límites">Estado de madurez y límites</a></li>
+<li><a href="#12-seguridad">Seguridad</a></li>
+<li><a href="#13-solución-de-problemas">Solución de problemas</a></li>
+<li><a href="#14-diagrama-de-conexión">Diagrama de conexión</a></li>
+<li><a href="#15-estructura-del-repositorio">Estructura del repositorio</a></li>
+<li><a href="#16-licencia-y-autor">Licencia y autor</a></li>
+<li><a href="#17-referencias">Referencias</a></li>
+</ol>
+<hr/>
+<h2 id="modelo-de-acceso">Modelo de acceso</h2>
+<p>La <strong>primera versión</strong> (<code>SpeechToTextAuxPy</code>) es pública y gratuita: es el punto de partida para entender el proyecto, probarlo y construir sobre él. Las <strong>3 versiones restantes</strong> son privadas y se comparten solo mediante solicitud.</p>
+<blockquote>
+<p><strong>Alcance del repositorio público:</strong> solo está incluida <code>versions/SpeechToTextAuxPy</code>. Las rutas a otras versiones se mencionan como referencia histórica y no forman parte de este repositorio; se comparten por solicitud.</p>
+<p><strong>Última versión: privada.</strong> Las mejoras, optimizaciones, depuraciones y variantes de hardware no se entregan de forma anónima: se solicitan y se acuerdan con un alcance claro.</p>
+</blockquote>
+<p><strong><a href="https://github.com/jmadasme/utilidades-python/issues/new?template=solicitud-acceso.yml&amp;title=Solicitud%20de%20acceso%20a%20versiones%20privadas">Solicitar acceso / licencia</a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Versión</th>
+<th>Acceso</th>
+<th>Enlace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SpeechToTextAuxPy</code></td>
+<td>Pública</td>
+<td><a href="versions/SpeechToTextAuxPy/">Ver carpeta</a></td>
+</tr>
+<tr>
+<td><code>EncrypPython</code></td>
+<td>Privada</td>
+<td><a href="https://github.com/jmadasme/utilidades-python/issues/new?template=solicitud-acceso.yml&amp;title=Solicitud%20de%20acceso%20a%20versiones%20privadas">Solicitar acceso</a></td>
+</tr>
+<tr>
+<td><code>CSJE</code></td>
+<td>Privada</td>
+<td><a href="https://github.com/jmadasme/utilidades-python/issues/new?template=solicitud-acceso.yml&amp;title=Solicitud%20de%20acceso%20a%20versiones%20privadas">Solicitar acceso</a></td>
+</tr>
+<tr>
+<td><code>cmdPbl</code></td>
+<td>Privada</td>
+<td><a href="https://github.com/jmadasme/utilidades-python/issues/new?template=solicitud-acceso.yml&amp;title=Solicitud%20de%20acceso%20a%20versiones%20privadas">Solicitar acceso</a></td>
+</tr>
+</tbody>
+</table>
+<p>La licencia MIT de este repositorio se aplica únicamente a la primera versión pública. Las versiones privadas se rigen por el acuerdo de acceso correspondiente.</p>
+<h2 id="1-que-es-este-repositorio">1. Qué es este repositorio</h2>
+<h3 id="11-la-idea">1.1 La idea</h3>
+<p>Con los años, un mismo autor acumula carpetas de código que resolvieron un problema puntual y después quedaron quietas. Este repositorio las ordena bajo un techo común, sin reescribirlas y sin fingir que son un producto. Cada carpeta dentro de <code>versions/</code> conserva el contenido original de la versión, con su propio <code>VERSION.md</code> que declara de dónde vino.</p>
+<p>La documentación es <strong>transversal</strong>: explica las cuatro juntas y dice cuál se puede usar hoy.</p>
+<h3 id="12-lo-que-vas-a-encontrar">1.2 Lo que vas a encontrar</h3>
+<p>Cuatro piezas con niveles de madurez radicalmente distintos:</p>
+<table>
+<thead>
+<tr>
+<th>Utilidad</th>
+<th>Qué es realmente</th>
+<th>Madurez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SpeechToTextAuxPy</strong></td>
+<td>Transcripción de voz continua en español desde la entrada de audio de Windows, usando SAPI vía <code>pythonnet</code></td>
+<td><strong>Usable</strong> en Windows 10 con el paquete de voz instalado</td>
+</tr>
+<tr>
+<td><strong>EncrypPython</strong></td>
+<td>Quince scripts sueltos de criptografía y codificación, cada uno con su demo al final</td>
+<td><strong>Didáctica</strong>: enseña conceptos, no protege nada</td>
+</tr>
+<tr>
+<td><strong>CSJE</strong></td>
+<td>Dos líneas que suman dos números</td>
+<td><strong>Mínima</strong>: un ejercicio, no una herramienta</td>
+</tr>
+<tr>
+<td><strong>cmdPbl</strong></td>
+<td>Un workflow de GitHub Actions detenido (<code>.stop</code>) y nada más</td>
+<td><strong>Stub</strong>: no ejecuta, no se puede ejecutar</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-lo-que-este-repositorio-no-es">1.3 Lo que este repositorio NO es</h3>
+<ul>
+<li><strong>No es una suite de criptografía.</strong> Ver <a href="#12-seguridad">§12</a>. Varios algoritmos son obsoletos por diseño y otros tienen fallas de implementación documentadas más abajo.</li>
+<li><strong>No es un paquete.</strong> No hay <code>pip install utilidades-python</code>. Se usa copiando el script o importándolo con la ruta a mano.</li>
+<li><strong>No es multiplataforma uniforme.</strong> SpeechToTextAuxPy es Windows. El resto es Python puro.</li>
+<li><strong>No tiene tests ni API estable.</strong> No hay <code>pytest</code>, ni <code>tox</code>, ni CI activo, y ningún nombre de función está congelado.</li>
+</ul>
+<hr/>
+<h2 id="2-mapa-de-utilidades">2. Mapa de utilidades</h2>
+<h3 id="21-vista-general">2.1 Vista general</h3>
+<pre><code>utilidades-python/
+│
+├── versions/
+│   ├── SpeechToTextAuxPy/        ← usable · Windows · 444 líneas
+│   │   ├── src/                  main.py · sapi_engine.py · console_utils.py
+│   │   ├── requirements.txt      pythonnet&gt;=3.0.0 · colorama&gt;=0.4.6
+│   │   ├── run.bat               lanzador con chcp 65001
+│   │   └── docs/                 datasheet.md · desarrollador.md
+│   │
+│   ├── EncrypPython/             ← didáctica · multiplataforma · 442 líneas
+│   │   └── 15 scripts _*.py      un algoritmo por archivo
+│   │
+│   ├── CSJE/                     ← mínima · 2 líneas
+│   │   └── sumador.py
+│   │
+│   └── cmdPbl/                   ← stub · 1 workflow detenido
+│       └── .github/workflows/main.yml.stop
+│
+├── docs/                         ← documentación transversal (esta)
+│   ├── datasheet.md
+│   ├── developer.md
+│   ├── REFERENCES.md
+│   ├── BITACORA.md
+│   └── assets/                   3 diagramas SVG
+│
+├── README.md                     ← este archivo
+└── LICENSE                       MIT · 2026 · jmadasme
+</code></pre>
+<h3 id="22-matriz-de-decision">2.2 Matriz de decisión</h3>
+<table>
+<thead>
+<tr>
+<th>Si querés…</th>
+<th>Usá</th>
+<th>Advertencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transcribir voz a texto en Windows</td>
+<td><code>SpeechToTextAuxPy</code></td>
+<td>Requiere paquete de voz <code>es-ES</code> y <code>pythonnet</code></td>
+</tr>
+<tr>
+<td>Entender el cifrado César</td>
+<td><code>EncrypPython/_cesar.py</code></td>
+<td>Solo letras ASCII sin acentos</td>
+</tr>
+<tr>
+<td>Calcular un SHA-256 de un texto</td>
+<td><code>EncrypPython/_sha256.py</code></td>
+<td>Solo strings, no archivos</td>
+</tr>
+<tr>
+<td>Cifrar un dato real</td>
+<td><strong>Ninguno</strong></td>
+<td>Usá <code>cryptography</code> con AES-GCM y gestión de claves propia</td>
+</tr>
+<tr>
+<td>Sumar dos números</td>
+<td><code>CSJE/sumador.py</code></td>
+<td>Es literalmente <code>a + b</code></td>
+</tr>
+<tr>
+<td>Automatizar con GitHub Actions</td>
+<td><strong>Ninguno</strong></td>
+<td><code>cmdPbl</code> está detenido y le faltan scripts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-comparacion-tecnica">2.3 Comparación técnica</h3>
+<table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>SpeechToTextAuxPy</th>
+<th>EncrypPython</th>
+<th>CSJE</th>
+<th>cmdPbl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plataforma</td>
+<td>Windows 10</td>
+<td>Cualquiera</td>
+<td>Cualquiera</td>
+<td>GitHub Actions</td>
+</tr>
+<tr>
+<td>Dependencias externas</td>
+<td>2</td>
+<td>2 opcionales (<code>pycryptodome</code>, <code>cryptography</code>)</td>
+<td>0</td>
+<td>0 (usa actions)</td>
+</tr>
+<tr>
+<td>Entrada</td>
+<td>Audio del dispositivo predeterminado</td>
+<td>Datos <em>hardcodeados</em> en cada script</td>
+<td>2 argumentos</td>
+<td>Repositorio externo</td>
+</tr>
+<tr>
+<td>Salida</td>
+<td>Consola (<code>stdout</code> / <code>stderr</code>)</td>
+<td>Consola</td>
+<td>Valor de retorno</td>
+<td>Archivos + commit</td>
+</tr>
+<tr>
+<td>Interfaz</td>
+<td>CLI interactiva</td>
+<td>Script ejecutable</td>
+<td>Función importable</td>
+<td>Workflow</td>
+</tr>
+<tr>
+<td>Persistencia</td>
+<td>Ninguna</td>
+<td>Ninguna</td>
+<td>Ninguna</td>
+<td>Git (si corriera)</td>
+</tr>
+<tr>
+<td>Manejo de errores</td>
+<td>3 códigos de salida</td>
+<td>Ninguno</td>
+<td>Ninguno</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Documentación propia</td>
+<td>Sí (<code>docs/</code>)</td>
+<td>Solo <code>VERSION.md</code></td>
+<td>README vacío</td>
+<td>Solo <code>VERSION.md</code></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="3-requisitos-e-instalacion">3. Requisitos e instalación</h2>
+<h3 id="31-lo-primero-necesitas-instalar-algo">3.1 Lo primero: ¿necesitás instalar algo?</h3>
+<p>Solo <strong>SpeechToTextAuxPy</strong> tiene dependencias externas y solo corre en Windows. Si vas a mirar <code>EncrypPython</code>, <code>CSJE</code> o <code>cmdPbl</code>, no hace falta instalar nada: son scripts de biblioteca estándar (salvo tres de cripto que necesitan <code>pycryptodome</code> o <code>cryptography</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Utilidad</th>
+<th>¿Necesita <code>pip install</code>?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SpeechToTextAuxPy</td>
+<td>Sí — <code>pythonnet</code>, <code>colorama</code></td>
+</tr>
+<tr>
+<td>EncrypPython (11 de 15 scripts)</td>
+<td>No — solo <code>hashlib</code>, <code>base64</code>, <code>binascii</code>, <code>random</code>, <code>string</code></td>
+</tr>
+<tr>
+<td>EncrypPython (<code>_aes.py</code>, <code>_rsa.py</code>)</td>
+<td>Sí — <code>pycryptodome</code></td>
+</tr>
+<tr>
+<td>EncrypPython (<code>_AES-256.py</code>)</td>
+<td>Sí — <code>cryptography</code></td>
+</tr>
+<tr>
+<td>CSJE</td>
+<td>No</td>
+</tr>
+<tr>
+<td>cmdPbl</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-entorno-virtual-e-instalacion">3.2 Entorno virtual e instalación</h3>
+<p>Las dependencias de SpeechToTextAuxPy están declaradas en <strong><code>versions/SpeechToTextAuxPy/requirements.txt</code></strong>:</p>
+<pre><code>pythonnet&gt;=3.0.0
+colorama&gt;=0.4.6
+</code></pre>
+<p>Comandos exactos para crear el entorno virtual e instalar:</p>
+<pre><code class="language-bash">cd versions/SpeechToTextAuxPy
 
-<section class="section" id="proyecto"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">01 — El proyecto</div><h2>Qué resuelve</h2><p class="section-sub">Cuatro versiones de utilidades Python: SpeechToTextAuxPy para Windows, EncrypPython con algoritmos clásicos, CSJE como suma mínima y cmdPbl como repositorio incompleto.</p></div>
-  <div class="two">
-    <div class="card reveal"><span class="tag">Problema</span><h3>El punto de partida</h3><p>Las utilidades pequeñas se dispersan y no queda claro cuáles están terminadas y cuáles no.</p></div>
-    <div class="card reveal"><span class="tag">Solución</span><h3>La propuesta</h3><p>Un repositorio que las reúne, declara el estado de cada una y permite compararlas.</p></div>
-  </div>
-</div></section>
+python3 -m venv venv
+source venv/bin/activate        # Linux/Mac
+venv\Scripts\activate           # Windows
 
-<section class="section" id="versiones"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">02 — Versiones</div><h2>Una puerta abierta. Tres bajo llave.</h2>
-  <p class="section-sub">La primera etapa queda libre para probar el camino. Las siguientes conservan el refinamiento, la depuración y el rendimiento: se comparten solo a quien las pide.</p></div>
-  <div class="gate reveal" id="acceso">
-    <div>
-      <span class="gate-badge">MODELO DE ACCESO</span>
-      <h3>4 versiones · 1 pública · 3 privadas</h3>
-      <p>La primera versión es gratuita y abierta. <strong>Última versión: privada.</strong> Las mejoras, optimizaciones y variantes de hardware no se regalan de forma anónima: se solicitan, se conversan y se entregan con un alcance claro.</p>
-    </div>
-    <div class="gate-actions">
-      <a class="btn btn-primary" href="https://github.com/jmadasme/utilidades-python/issues/new?template=solicitud-acceso.yml&title=Solicitud%20de%20acceso%20a%20versiones%20privadas" target="_blank" rel="noopener">Solicitar acceso / licencia</a>
-      <a class="btn btn-ghost" href="#docs">Ver README y documentación</a>
-    </div>
-  </div>
-  <div class="versions"><article class="version reveal">
-  <div class="version-top"><h3>SpeechToTextAuxPy</h3><span class="count">1 archivo</span></div>
-  <div style="margin-bottom:8px"><span class="state pub">PÚBLICA</span></div>
-  <p>Transcripción continua en español con SAPI/System.Speech y pythonnet.</p>
-  <a href="versions/SpeechToTextAuxPy/" target="_blank" rel="noopener">Ver carpeta <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-</article><article class="version reveal private">
-  <div class="version-top"><h3>EncrypPython</h3><span class="count">1 archivo</span></div>
-  <div style="margin-bottom:8px"><span class="state priv">PRIVADA</span></div>
-  <p>Scripts de AES, RSA, SHA-256, MD5, Base64, XOR, ROT13, César y más.</p>
-  <a class="private-link" href="https://github.com/jmadasme/utilidades-python/issues/new?template=solicitud-acceso.yml&title=Solicitud%20de%20acceso%20a%20versiones%20privadas" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Solicitar acceso</a>
-</article><article class="version reveal private">
-  <div class="version-top"><h3>CSJE</h3><span class="count">1 archivo</span></div>
-  <div style="margin-bottom:8px"><span class="state priv">PRIVADA</span></div>
-  <p>Utilidad mínima de suma en Python.</p>
-  <a class="private-link" href="https://github.com/jmadasme/utilidades-python/issues/new?template=solicitud-acceso.yml&title=Solicitud%20de%20acceso%20a%20versiones%20privadas" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Solicitar acceso</a>
-</article><article class="version reveal private">
-  <div class="version-top"><h3>cmdPbl</h3><span class="count">1 archivo</span></div>
-  <div style="margin-bottom:8px"><span class="state priv">PRIVADA</span></div>
-  <p>Stub con un workflow detenido; se documenta como versión incompleta.</p>
-  <a class="private-link" href="https://github.com/jmadasme/utilidades-python/issues/new?template=solicitud-acceso.yml&title=Solicitud%20de%20acceso%20a%20versiones%20privadas" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Solicitar acceso</a>
-</article></div>
-</div></section>
+pip install -r requirements.txt
+</code></pre>
+<blockquote>
+<p><strong>Windows es el único destino real de SpeechToTextAuxPy.</strong> En Linux o macOS <code>pythonnet</code> puede instalarse, pero <code>clr.AddReference("System.Speech")</code> fallará porque <code>System.Speech.dll</code> es parte de .NET Framework y no existe fuera de Windows. El <code>venv</code> con <code>source</code> figura por completitud; el flujo que funciona es el de Windows con <code>venv\Scripts\activate</code>.</p>
+</blockquote>
+<p>Para los scripts de criptografía que lo requieran:</p>
+<pre><code class="language-bash">python3 -m venv venv
+source venv/bin/activate
+pip install pycryptodome cryptography
+</code></pre>
+<p>Ninguna de esas dos librerías está en un <code>requirements.txt</code> del proyecto: se instalan a demanda, script por script. Eso es parte de la deuda técnica documentada en <a href="#11-estado-de-madurez-y-límites">§11</a>.</p>
+<h3 id="34-instalacion-del-paquete-de-voz-en-windows-speechtotextauxpy">3.4 Instalación del paquete de voz en Windows (SpeechToTextAuxPy)</h3>
+<p>Sin esto, el motor falla con código de salida <code>2</code>:</p>
+<ol>
+<li><strong>Configuración</strong> → <strong>Hora e idioma</strong> → <strong>Voz</strong></li>
+<li>En <em>Administrar voces</em>, <strong>Agregar voces</strong></li>
+<li>Elegir <strong>Español (España)</strong> o <strong>Español (México)</strong></li>
+<li>Esperar la descarga y reiniciar la aplicación</li>
+</ol>
+<p>Verificación: <code>Get-WinUserLanguageList</code> en PowerShell lista los idiomas instalados.</p>
+<h3 id="35-instalacion-de-dependencias-de-cripto">3.5 Instalación de dependencias de cripto</h3>
+<table>
+<thead>
+<tr>
+<th>Script</th>
+<th>Paquete</th>
+<th>Instalación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_aes.py</code></td>
+<td><code>pycryptodome</code></td>
+<td><code>pip install pycryptodome</code></td>
+</tr>
+<tr>
+<td><code>_rsa.py</code></td>
+<td><code>pycryptodome</code></td>
+<td><code>pip install pycryptodome</code></td>
+</tr>
+<tr>
+<td><code>_AES-256.py</code></td>
+<td><code>cryptography</code></td>
+<td><code>pip install cryptography</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>pycryptodome</code> expone el paquete <code>Crypto</code> (no confundir con <code>pycrypto</code>, abandonado desde 2013 y con CVEs sin parchear).</p>
+<hr/>
+<h2 id="4-speechtotextauxpy-voz-a-texto">4. SpeechToTextAuxPy — voz a texto</h2>
+<h3 id="41-que-hace">4.1 Qué hace</h3>
+<p>Escucha el <strong>dispositivo de entrada de audio predeterminado</strong> de Windows —un micrófono o una entrada auxiliar <em>line-in</em>— y transcribe en español, de forma continua, cada frase que reconoce. Cada línea se imprime en la consola con un <em>timestamp</em> <code>[HH:MM:SS]</code>. El programa corre hasta que se presiona <code>Ctrl+C</code>.</p>
+<p>Es la utilidad más completa del repositorio: tiene separación en módulos, manejo de señales, códigos de salida diferenciados, degradación elegante cuando falta <code>colorama</code> y mensajes de error que dicen qué hacer.</p>
+<h3 id="42-principio-de-funcionamiento">4.2 Principio de funcionamiento</h3>
+<p>La cadena tiene cinco eslabones físicos y lógicos:</p>
+<pre><code>onda sonora → transductor → ADC → modelo acústico → modelo de lenguaje → texto
+</code></pre>
+<ol>
+<li><strong>Transducción.</strong> El micrófono (electret o MEMS) convierte variaciones de presión de aire en una señal eléctrica analógica. En una entrada <em>line-in</em>, la señal ya llega en nivel de línea y no pasa por el transductor.</li>
+<li><strong>Digitalización.</strong> La tarjeta de sonido muestrea la señal (típicamente 16 kHz o 44.1 kHz, 16 bits) y entrega PCM al sistema operativo. Windows lo enruta al dispositivo de entrada predeterminado.</li>
+<li><strong>Reconocimiento.</strong> <code>System.Speech.Recognition.SpeechRecognitionEngine</code> de .NET Framework consume ese flujo y aplica un modelo acústico (qué fonemas suenan) y un modelo de lenguaje (qué secuencias de palabras son probables en español).</li>
+<li><strong>Puente.</strong> <code>pythonnet</code> carga el CLR dentro del proceso de Python y permite instanciar clases .NET como si fueran Python. <code>clr.AddReference("System.Speech")</code> resuelve el ensamblado.</li>
+<li><strong>Presentación.</strong> El evento <code>SpeechRecognized</code> dispara un callback que extrae <code>args.Result.Text</code> y lo imprime con formato.</li>
+</ol>
+<p>La gramática cargada es <code>DictationGrammar</code>: texto libre, sin vocabulario restringido. Eso la hace flexible pero menos precisa que una gramática cerrada. La modalidad es <code>RecognizeMode.Multiple</code>, es decir, escucha asíncrona continua en lugar de una captura por vez.</p>
+<h3 id="43-arquitectura-de-modulos">4.3 Arquitectura de módulos</h3>
+<table>
+<thead>
+<tr>
+<th>Módulo</th>
+<th>Responsabilidad</th>
+<th>Líneas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>src/main.py</code></td>
+<td>Punto de entrada, UTF-8 en consola, señales <code>SIGINT</code>/<code>SIGTERM</code>, bucle de espera, códigos de salida</td>
+<td>135</td>
+</tr>
+<tr>
+<td><code>src/sapi_engine.py</code></td>
+<td>Clase <code>SapiEngine</code>: inicializa el motor, carga la gramática, arranca y detiene el reconocimiento, libera COM/.NET</td>
+<td>201</td>
+</tr>
+<tr>
+<td><code>src/console_utils.py</code></td>
+<td>Impresión con timestamp y color; <em>fallback</em> cuando <code>colorama</code> no está</td>
+<td>108</td>
+</tr>
+</tbody>
+</table>
+<h3 id="44-requisitos">4.4 Requisitos</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Mínimo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sistema operativo</td>
+<td>Windows 10 (build 10240 o superior)</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>3.10+</td>
+</tr>
+<tr>
+<td>.NET Framework</td>
+<td>4.7.2+ (incluido en Windows 10)</td>
+</tr>
+<tr>
+<td>Paquete de voz</td>
+<td>Español <code>es-ES</code> instalado</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>Micrófono o <em>line-in</em> habilitado y seleccionado</td>
+</tr>
+<tr>
+<td>RAM libre</td>
+<td>~512 MB para el proceso</td>
+</tr>
+</tbody>
+</table>
+<h3 id="45-uso">4.5 Uso</h3>
+<p><strong>Opción A — lanzador (recomendado en Windows):</strong></p>
+<pre><code class="language-bat">run.bat
+</code></pre>
+<p><code>run.bat</code> hace <code>chcp 65001</code> para poner la consola en UTF-8, instala las dependencias si faltan y lanza <code>python src/main.py</code>.</p>
+<p><strong>Opción B — directo:</strong></p>
+<pre><code class="language-bat">python src/main.py
+</code></pre>
+<p><strong>Opción C — capturar la transcripción en un archivo:</strong></p>
+<pre><code class="language-bat">python src/main.py &gt; transcripcion.txt 2&gt; errores.log
+</code></pre>
+<p><code>colorama</code> elimina los códigos ANSI cuando la salida no es una terminal (comportamiento por defecto de <code>init()</code>), así que el archivo queda con texto limpio. Los errores se separan porque <code>print_error</code> escribe en <code>stderr</code>.</p>
+<h3 id="46-salida-esperada">4.6 Salida esperada</h3>
+<pre><code>[10:15:32] === SpeechToTextAuxPy ===
+[10:15:32] Reconocimiento de voz continuo mediante SAPI (System.Speech)
+[10:15:32] Motor SAPI inicializado correctamente (idioma: es-ES)
+[10:15:32] Iniciando reconocimiento de voz en español...
+[10:15:32] Habla al micrófono/entrada auxiliar. Ctrl+C para salir.
+[10:15:35] bienvenidos a la clase de procesamiento del lenguaje natural
+[10:15:41] hoy vamos a ver cómo funciona un modelo acústico
+[10:15:49] la transcripción se muestra en pantalla en tiempo real
+^C
+[10:15:52] Ctrl+C recibido. Deteniendo...
+[10:15:52] Reconocimiento de voz detenido.
+[10:15:52] Programa terminado.
+</code></pre>
+<h3 id="47-codigos-de-salida">4.7 Códigos de salida</h3>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Significado</th>
+<th>Qué hacer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Salida normal por <code>Ctrl+C</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td><code>ImportError</code>: falta una dependencia</td>
+<td><code>pip install -r requirements.txt</code></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td><code>RuntimeError</code>: falló SAPI (idioma o audio)</td>
+<td>Instalar el paquete de voz o conectar un micrófono</td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td>Error inesperado</td>
+<td>Leer el mensaje en <code>stderr</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="48-limites-conocidos">4.8 Límites conocidos</h3>
+<ul>
+<li><strong>No guarda archivos.</strong> La única salida es la consola; para persistir hay que redirigir.</li>
+<li><strong>No hay selección de dispositivo.</strong> Usa siempre el predeterminado del sistema; cambiarlo requiere ir a Configuración de Windows.</li>
+<li><strong>No hay puntuación ni mayúsculas automáticas.</strong> <code>DictationGrammar</code> devuelve texto plano en minúsculas, sin signos.</li>
+<li><strong>No distingue hablantes.</strong> No hay <em>diarización</em>.</li>
+<li><strong>Depende de un componente propietario.</strong> <code>System.Speech</code> no existe fuera de Windows y no está en .NET (Core) 8+.</li>
+<li><strong><code>signal.pause()</code> no existe en Windows.</strong> El código lo intenta en cada iteración del bucle y cae al <code>except AttributeError</code> con <code>time.sleep(0.5)</code>. Funciona, pero lanza y captura una excepción cada 500 ms. Ver <a href="https://github.com/jmadasme/utilidades-python/blob/main/BITACORA.md">BITACORA.md</a>.</li>
+</ul>
+<hr/>
+<h2 id="5-encryppython-criptografia-y-codificacion">5. EncrypPython — criptografía y codificación</h2>
+<h3 id="51-que-hace">5.1 Qué hace</h3>
+<p>Quince scripts independientes, uno por algoritmo o técnica. La mayoría son demostraciones de una sola función más un ejemplo impreso. No hay paquete, no hay CLI unificada, no hay tests: cada archivo se ejecuta solo.</p>
+<p>El valor es <strong>pedagógico</strong>: permite ver, en veinte líneas, la diferencia entre codificar, hashear, cifrar y ofuscar —una distinción que se confunde todo el tiempo.</p>
+<h3 id="52-catalogo-completo">5.2 Catálogo completo</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Script</th>
+<th>Familia</th>
+<th>Qué hace</th>
+<th>¿Reversible?</th>
+<th>Dependencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>_cesar.py</code></td>
+<td>Cifrado clásico</td>
+<td>Desplaza letras ASCII N posiciones</td>
+<td>Sí, conociendo N</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>_rot13.py</code></td>
+<td><em>(contenido: XOR)</em></td>
+<td>Ofusca y desofusca con XOR de clave entera</td>
+<td>Sí, con la clave</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>_xor.py</code></td>
+<td>Cifrado clásico</td>
+<td>XOR de un byte sobre cada carácter</td>
+<td>Sí, con la clave</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>_base16.py</code></td>
+<td>Codificación</td>
+<td>Texto → hexadecimal → texto</td>
+<td>Sí</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>_64.py</code></td>
+<td>Codificación</td>
+<td>Texto → Base64</td>
+<td>Sí</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>_xxd.py</code></td>
+<td>Codificación + clásico</td>
+<td>César y luego <em>hexlify</em></td>
+<td>No sin el desplazamiento</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>_bin.py</code></td>
+<td>Cifrado clásico</td>
+<td>Invierte los 8 bits de cada carácter</td>
+<td>Sí (es involución)</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>_transposicion.py</code></td>
+<td>Cifrado clásico</td>
+<td>Reordena por columnas con relleno <code>X</code></td>
+<td>Parcial (pierde el relleno)</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>_ofusca.py</code></td>
+<td>Ofuscación</td>
+<td>Sustitución con alfabeto aleatorio</td>
+<td>Solo en la misma ejecución</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>_cifrado_de_flujo_bytes.py</code></td>
+<td>Ofuscación</td>
+<td>Igual que el anterior, con otro alfabeto</td>
+<td>Solo en la misma ejecución</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>11</td>
+<td><code>_md5.py</code></td>
+<td>Hash</td>
+<td>MD5 de un string</td>
+<td>No</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>12</td>
+<td><code>_sha256.py</code></td>
+<td>Hash</td>
+<td>SHA-256 de un string</td>
+<td>No</td>
+<td>stdlib</td>
+</tr>
+<tr>
+<td>13</td>
+<td><code>_aes.py</code></td>
+<td>Cifrado moderno</td>
+<td>AES-128-CBC con IV aleatorio</td>
+<td>Sí, con la clave</td>
+<td><code>pycryptodome</code></td>
+</tr>
+<tr>
+<td>14</td>
+<td><code>_AES-256.py</code></td>
+<td>Cifrado moderno</td>
+<td>ECDH P-256 + PBKDF2 + AES-256-CBC</td>
+<td>Sí, en teoría</td>
+<td><code>cryptography</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td><code>_rsa.py</code></td>
+<td>Cifrado moderno</td>
+<td>RSA-2048 con OAEP</td>
+<td>Sí, con la privada</td>
+<td><code>pycryptodome</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="53-las-cuatro-familias-explicadas">5.3 Las cuatro familias, explicadas</h3>
+<p><strong>Codificación</strong> (<code>_base16.py</code>, <code>_64.py</code>). No protege nada. Transforma bytes en un alfabeto seguro para transporte (correo, JSON, URL). Cualquiera puede revertirlo sin clave. Base64 no es cifrado, y confundirlos es el error más común del área.</p>
+<p><strong>Hash</strong> (<code>_md5.py</code>, <code>_sha256.py</code>). Función de un solo sentido: del texto sale una huella de tamaño fijo; de la huella no se vuelve al texto. Sirve para verificar integridad, no para ocultar. MD5 está roto para usos de seguridad desde 2004 (colisiones prácticas); SHA-256 sigue vigente para integridad.</p>
+<p><strong>Cifrado clásico</strong> (<code>_cesar.py</code>, <code>_xor.py</code>, <code>_bin.py</code>, <code>_transposicion.py</code>, <code>_rot13.py</code>). Todos precomputacionales o trivialmente quebrables. Su interés es histórico y didáctico. Ninguno resiste análisis de frecuencia ni fuerza bruta moderna.</p>
+<p><strong>Cifrado moderno</strong> (<code>_aes.py</code>, <code>_AES-256.py</code>, <code>_rsa.py</code>). Usan primitivas reales (AES, RSA, ECDH, PBKDF2) a través de librerías serias. El problema no son las primitivas sino la <strong>construcción</strong>: claves fijas en el código, ausencia de autenticación (sin MAC ni GCM), padding casero y, en <code>_AES-256.py</code>, un error de derivación que rompe el descifrado.</p>
+<h3 id="54-detalle-de-los-tres-scripts-modernos">5.4 Detalle de los tres scripts modernos</h3>
+<h4 id="_aespy-aes-128-cbc"><code>_aes.py</code> — AES-128-CBC</h4>
+<p>Genera un IV aleatorio de 16 bytes, aplica PKCS#7 con <code>Crypto.Util.Padding.pad</code>, cifra en modo CBC y devuelve <code>base64(iv || ciphertext)</code>. La clave se declara en el propio archivo:</p>
+<pre><code class="language-python">clave = b'EstaEsMiClave12'   # 15 bytes, no 16 como dice el comentario
+clave = clave.ljust(16, b'\0')
+</code></pre>
+<p>Quince bytes rellenados con un byte nulo. La clave está en el código fuente, con lo cual el cifrado es una demostración, no una protección.</p>
+<h4 id="_aes-256py-ecdh-pbkdf2-aes-256-cbc"><code>_AES-256.py</code> — ECDH + PBKDF2 + AES-256-CBC</h4>
+<p>El guion es ambicioso: dos partes generan pares P-256, hacen ECDH, derivan una clave de 32 bytes con PBKDF2-HMAC-SHA256 (100 000 iteraciones) y cifran con AES-256-CBC. Tiene dos defectos reales:</p>
+<ul>
+<li><strong>Cada parte usa una <code>salt</code> distinta</strong>, generada dentro de <code>obtener_secreto_compartido()</code>. Por lo tanto <code>secret_key_1 != secret_key_2</code> y la línea que imprime <code>Secretos coinciden:</code> muestra <code>False</code>. El intercambio de claves no converge.</li>
+<li><strong><code>descifrar_aes()</code> vuelve a derivar</strong> con PBKDF2 sobre una clave que ya era el resultado de PBKDF2. La clave de descifrado no coincide con la de cifrado. En la práctica, el <code>unpad</code> casero suele lanzar una excepción o devolver basura.</li>
+</ul>
+<p>Además usa CBC sin MAC (sin integridad) y un padding propio sobre <code>str</code> antes de <code>.encode()</code>, que se rompe con caracteres multibyte.</p>
+<h4 id="_rsapy-rsa-2048-oaep"><code>_rsa.py</code> — RSA-2048-OAEP</h4>
+<p>Es el más correcto de los tres. Genera el par al importar el módulo, cifra con la pública y descifra con la privada usando <code>PKCS1_OAEP</code> (el relleno recomendado). Limitación: OAEP con SHA-1 y 2048 bits admite como máximo 214 bytes de mensaje. No sirve para archivos, sí para claves de sesión.</p>
+<h3 id="55-uso">5.5 Uso</h3>
+<pre><code class="language-bash">cd versions/EncrypPython
+python3 _sha256.py
+# Texto codificado con SHA-256: 0e4b0d2b8a1d3a2b1c5e...
+</code></pre>
+<blockquote>
+<p><strong>Los scripts no tienen guarda <code>if __name__ == "__main__":</code>.</strong> La demo está en el nivel superior del módulo: <strong>importarlos la ejecuta</strong>. En <code>_rsa.py</code> eso genera un par RSA-2048 en cada <code>import</code>. Para reutilizar una función, copiala; no la importes.</p>
+</blockquote>
+<h3 id="56-limites">5.6 Límites</h3>
+<ul>
+<li><strong>Sin CLI.</strong> No hay <code>argparse</code>, no hay <code>--help</code>, no hay entrada por <em>stdin</em>.</li>
+<li><strong>Sin parámetros.</strong> El texto de ejemplo está escrito dentro de cada archivo (<code>"hola"</code>, <code>"1234"</code>, <code>"guau"</code>).</li>
+<li><strong>Sin manejo de errores.</strong> Un dato inválido produce un <code>ValueError</code> o <code>UnicodeDecodeError</code> sin mensaje útil.</li>
+<li><strong>Sin empaquetado.</strong> No hay <code>__init__.py</code>; la carpeta no es un paquete importable.</li>
+<li><strong>Sin tests ni vectores de prueba.</strong> No se valida contra los vectores del NIST.</li>
+<li><strong>Dos scripts son casi el mismo</strong> (<code>_ofusca.py</code> y <code>_cifrado_de_flujo_bytes.py</code>), con alfabetos de distinto tamaño (95 vs 100 caracteres). Ver <a href="https://github.com/jmadasme/utilidades-python/blob/main/BITACORA.md">BITACORA.md</a>.</li>
+<li><strong><code>_rot13.py</code> no implementa ROT13</strong>: contiene una implementación de XOR. El nombre y el contenido no coinciden.</li>
+</ul>
+<hr/>
+<h2 id="6-csje-sumador-minimo">6. CSJE — sumador mínimo</h2>
+<h3 id="61-que-hace">6.1 Qué hace</h3>
+<p>Define una función que suma dos valores. Nada más.</p>
+<pre><code class="language-python">def sumar(a, b):
+    return a + b
+</code></pre>
+<p>Dos líneas, terminaciones CRLF (fue escrito en Windows), sin <code>if __name__</code>, sin CLI, sin tests, sin type hints. El <code>README.md</code> de la carpeta contiene únicamente el título <code># CSJE</code>.</p>
+<h3 id="62-uso">6.2 Uso</h3>
+<p>Como no es un paquete, hay que agregar la ruta:</p>
+<pre><code class="language-python">import sys
+sys.path.append("versions/CSJE")
+from sumador import sumar
 
-<section class="section tight"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">03 — Cómo se usa</div><h2>De la carpeta a la práctica.</h2></div>
-  <div class="timeline"><div class="step reveal"><div class="step-n">01</div><h4>Elegí la utilidad</h4><p>Voz, criptografía, suma o stub.</p></div><div class="step reveal"><div class="step-n">02</div><h4>Leé su VERSION.md</h4><p>Cada carpeta declara alcance y estado.</p></div><div class="step reveal"><div class="step-n">03</div><h4>Instalá dependencias</h4><p>Solo si la utilidad las necesita.</p></div><div class="step reveal"><div class="step-n">04</div><h4>Ejecutá</h4><p>Cada versión conserva su entrypoint.</p></div></div>
-</div></section>
+print(sumar(2, 3))        # 5
+print(sumar("a", "b"))    # ab
+print(sumar([1], [2]))    # [1, 2]
+</code></pre>
+<p>La función no valida tipos: <code>sumar("2", 3)</code> lanza <code>TypeError</code>. Eso es coherente con su propósito de ejercicio.</p>
+<h3 id="63-para-que-sirve-entonces">6.3 Para qué sirve entonces</h3>
+<p>Como <strong>registro de la versión inicial</strong> de un repositorio. Es el punto cero: el commit más pequeño posible que se puede publicar. Su valor documental es mostrar el contraste con las otras tres utilidades del archivo.</p>
+<p>No se recomienda usarlo en ningún proyecto real. Si necesitás sumar, <code>+</code> ya existe.</p>
+<hr/>
+<h2 id="7-cmdpbl-stub">7. cmdPbl — stub</h2>
+<h3 id="71-estado-incompleto-por-diseno">7.1 Estado: incompleto, por diseño</h3>
+<p>La carpeta contiene <strong>un solo archivo</strong>: <code>.github/workflows/main.yml.stop</code>. No hay código Python, no hay <code>requirements.txt</code>, no hay README. El sufijo <code>.stop</code> no es una convención de GitHub: es la forma de dejar un workflow en el repositorio sin que Actions lo ejecute (GitHub solo procesa <code>.yml</code> y <code>.yaml</code> dentro de <code>.github/workflows/</code>).</p>
+<p>Se documenta honestamente como <strong>stub</strong>: una idea que no llegó a implementarse y que se conserva por trazabilidad.</p>
+<h3 id="72-que-contenia-el-workflow">7.2 Qué contenía el workflow</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nombre</td>
+<td><em>Leer y borrar archivos .txt</em></td>
+</tr>
+<tr>
+<td>Disparador</td>
+<td><code>schedule</code> cada 10 minutos (<code>*/10 * * * *</code>) y <code>workflow_dispatch</code></td>
+</tr>
+<tr>
+<td>Runner</td>
+<td><code>ubuntu-latest</code></td>
+</tr>
+<tr>
+<td>Checkout</td>
+<td><code>jmadasme/cmd</code> con <code>secrets.GH_TOKEN</code></td>
+</tr>
+<tr>
+<td>Python</td>
+<td>3.10</td>
+</tr>
+<tr>
+<td>Scripts invocados</td>
+<td><code>scriptAgrega.py</code>, <code>firma.py</code></td>
+</tr>
+</tbody>
+</table>
+<p>La intención era convertir un repositorio en una <strong>cola de comandos basada en archivos</strong>: alguien dejaba un <code>.txt</code>, un job periódico lo leía, lo borraba, y otro script generaba un hash y lo guardaba en un archivo <code>signature</code>. Un patrón de <em>polling</em> con Git como transporte.</p>
+<h3 id="73-por-que-no-se-puede-ejecutar">7.3 Por qué no se puede ejecutar</h3>
+<ol>
+<li><strong>Los scripts no existen</strong> en este snapshot: <code>scriptAgrega.py</code> y <code>firma.py</code> no están.</li>
+<li><strong>El repositorio de destino es privado</strong> (<code>jmadasme/cmd</code>) y requiere un secreto <code>GH_TOKEN</code> que no se publica.</li>
+<li><strong>El paso de instalación ignora errores</strong> (<code>pip install -r requirements.txt || true</code>), lo que sugiere que el <code>requirements.txt</code> tampoco existía.</li>
+<li><strong>El <em>checkout</em> es de otro repositorio</strong>, no del propio, así que el workflow tal como está depende de un entorno externo.</li>
+</ol>
+<p>Renombrar el archivo a <code>.yml</code> lo activaría y lo haría fallar en el primer paso. <strong>No lo hagas</strong> salvo que quieras reconstruir el sistema completo.</p>
+<h3 id="74-que-se-puede-aprender-de-el">7.4 Qué se puede aprender de él</h3>
+<ul>
+<li>Un workflow desactivado por extensión es una forma limpia de archivar automatizaciones sin borrarlas.</li>
+<li>Un job cada 10 minutos son 4 320 ejecuciones al mes: para <em>polling</em> conviene un webhook, y para escribir en otro repo, un <em>fine-grained token</em> con permisos mínimos.</li>
+</ul>
+<hr/>
+<h2 id="8-interfaces-y-conexiones">8. Interfaces y conexiones</h2>
+<blockquote>
+<p><strong>No hay pinout ni GPIO en este repositorio.</strong> Las cuatro utilidades son software puro: no tocan pines, no hablan I²C, no conmutan relés. Lo que sigue es el equivalente funcional: por dónde entra y sale la información.</p>
+</blockquote>
+<h3 id="81-interfaces-de-speechtotextauxpy">8.1 Interfaces de SpeechToTextAuxPy</h3>
+<table>
+<thead>
+<tr>
+<th>Interfaz</th>
+<th>Tipo</th>
+<th>Dirección</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrada de audio</td>
+<td>Jack 3.5 mm TRS / USB</td>
+<td>Entrada</td>
+<td>Micrófono o <em>line-in</em>; el sistema elige el predeterminado</td>
+</tr>
+<tr>
+<td><code>stdout</code></td>
+<td>Texto UTF-8</td>
+<td>Salida</td>
+<td>Transcripción con timestamp</td>
+</tr>
+<tr>
+<td><code>stderr</code></td>
+<td>Texto UTF-8</td>
+<td>Salida</td>
+<td>Errores con prefijo <code>ERROR:</code></td>
+</tr>
+<tr>
+<td><code>stdin</code></td>
+<td>—</td>
+<td>—</td>
+<td>No se usa; solo se reconfigura a UTF-8</td>
+</tr>
+<tr>
+<td><code>SIGINT</code> / <code>SIGTERM</code></td>
+<td>Señal</td>
+<td>Entrada</td>
+<td>Detención limpia</td>
+</tr>
+<tr>
+<td>System.Speech</td>
+<td>Ensamblado .NET</td>
+<td>Entrada</td>
+<td>Cargado vía <code>clr.AddReference</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-conector-de-audio-referencia-fisica">8.2 Conector de audio (referencia física)</h3>
+<p>Si se usa <em>line-in</em> con un cable de 3,5 mm:</p>
+<table>
+<thead>
+<tr>
+<th>Contacto</th>
+<th>Señal</th>
+<th>Color habitual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Punta (<em>tip</em>)</td>
+<td>Canal izquierdo</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Anillo (<em>ring</em>)</td>
+<td>Canal derecho</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Camisa (<em>sleeve</em>)</td>
+<td>Masa / GND</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>En la PC, el conector <em>line-in</em> suele ser azul; el de micrófono, rosa. SAPI toma el dispositivo <strong>predeterminado de grabación</strong>, así que hay que seleccionar el correcto en el Panel de control de sonido.</p>
+<h3 id="83-interfaces-de-encryppython">8.3 Interfaces de EncrypPython</h3>
+<table>
+<thead>
+<tr>
+<th>Interfaz</th>
+<th>Tipo</th>
+<th>Dirección</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>stdout</code></td>
+<td>Texto</td>
+<td>Salida (resultado de la demo)</td>
+</tr>
+<tr>
+<td>Importación de módulo</td>
+<td>Python</td>
+<td>Entrada (pero ejecuta la demo)</td>
+</tr>
+<tr>
+<td><code>Crypto.*</code></td>
+<td>Librería</td>
+<td>Entrada (<code>pycryptodome</code>)</td>
+</tr>
+<tr>
+<td><code>cryptography.hazmat.*</code></td>
+<td>Librería</td>
+<td>Entrada (<code>cryptography</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="84-interfaces-de-csje-y-cmdpbl">8.4 Interfaces de CSJE y cmdPbl</h3>
+<table>
+<thead>
+<tr>
+<th>Utilidad</th>
+<th>Interfaz</th>
+<th>Dirección</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSJE</td>
+<td><code>from sumador import sumar</code></td>
+<td>Entrada (2 argumentos)</td>
+</tr>
+<tr>
+<td>CSJE</td>
+<td>Valor de retorno</td>
+<td>Salida</td>
+</tr>
+<tr>
+<td>cmdPbl</td>
+<td>GitHub Actions (<code>schedule</code>, <code>workflow_dispatch</code>)</td>
+<td>Entrada (desactivada)</td>
+</tr>
+<tr>
+<td>cmdPbl</td>
+<td>Git (commit, push)</td>
+<td>Salida (no implementada)</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="9-ejemplos-de-uso-realistas">9. Ejemplos de uso realistas</h2>
+<h3 id="91-transcribir-una-clase-grabada-por-line-in">9.1 Transcribir una clase grabada por <em>line-in</em></h3>
+<p><strong>Escenario.</strong> Una notebook reproduce un audio de clase por la salida de auriculares; un cable 3,5 mm lleva esa señal a la entrada <em>line-in</em> de un PC con Windows. Se quiere texto para pegar en los apuntes.</p>
+<pre><code class="language-bat">:: 1. Verificar que el line-in esté como dispositivo predeterminado
+::    Configuración &gt; Sonido &gt; Panel de control de sonido &gt; Grabación
 
-<section class="section tight"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">04 — Decisiones</div><h2>Lo que lo hace distinto</h2></div>
-  <div class="features"><div class="feature reveal"><h4>SpeechToText</h4><p>Voz a texto offline en Windows.</p></div><div class="feature reveal"><h4>EncrypPython</h4><p>Algoritmos clásicos y modernos.</p></div><div class="feature reveal"><h4>CSJE</h4><p>Una utilidad mínima, sin vueltas.</p></div><div class="feature reveal"><h4>cmdPbl</h4><p>Honestidad: un stub también es una versión.</p></div><div class="feature reveal"><h4>Estado claro</h4><p>Cada carpeta declara su madurez.</p></div><div class="feature reveal"><h4>Licencia única</h4><p>MIT para todo el conjunto.</p></div></div>
-</div></section>
+:: 2. Ir a la carpeta
+cd versions\SpeechToTextAuxPy
 
-<section class="section tight" id="stack"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">05 — Stack y arranque</div><h2>Con qué está construido</h2></div>
-  <div class="stack-grid">
-    <div class="reveal"><div class="chips"><span class="chip">Python</span><span class="chip">SAPI</span><span class="chip">pythonnet</span><span class="chip">cryptography</span><span class="chip">Windows</span></div><div class="note"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg><span>SpeechToText es Windows-only. EncrypPython y CSJE son scripts independientes.</span></div></div>
-    <div class="terminal reveal"><div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><pre>git clone https://github.com/jmadasme/utilidades-python.git
-cd utilidades-python/versions/SpeechToTextAuxPy
+:: 3. Crear entorno e instalar
 python -m venv venv
 venv\Scripts\activate
-pip install -r requirements.txt</pre></div>
-  </div>
-</div></section>
+pip install -r requirements.txt
 
-<section class="section tight" id="docs"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">06 — Documentación</div><h2>Para usar y para entender.</h2><p class="section-sub">Cada documento está en el repositorio, versionado junto al código.</p></div>
-  <div class="docs"><a class="doc reveal" href="https://github.com/jmadasme/utilidades-python/blob/main/docs/datasheet.md" target="_blank" rel="noopener"><span class="tag">DATASHEET</span><h4>Manual de operación</h4><p>Instalación, uso, configuración y troubleshooting.</p></a><a class="doc reveal" href="https://github.com/jmadasme/utilidades-python/blob/main/docs/developer.md" target="_blank" rel="noopener"><span class="tag">DEVELOPER</span><h4>Guía de código</h4><p>Arquitectura, módulos, contratos y extensión.</p></a><a class="doc reveal" href="https://github.com/jmadasme/utilidades-python/blob/main/docs/REFERENCES.md" target="_blank" rel="noopener"><span class="tag">REFERENCES</span><h4>Referencias</h4><p>Fuentes oficiales y documentación de las tecnologías.</p></a><a class="doc reveal" href="https://github.com/jmadasme/utilidades-python/blob/main/docs/BITACORA.md" target="_blank" rel="noopener"><span class="tag">BITÁCORA</span><h4>Bitácora</h4><p>Decisiones, problemas y lecciones del proyecto.</p></a></div>
-</div></section>
+:: 4. Ejecutar y guardar
+python src\main.py &gt; clase.txt 2&gt; clase_errores.log
+</code></pre>
+<p>Resultado en <code>clase.txt</code>:</p>
+<pre><code>[09:00:12] === SpeechToTextAuxPy ===
+[09:00:12] Motor SAPI inicializado correctamente (idioma: es-ES)
+[09:00:14] vamos a comenzar con la unidad de redes neuronales
+[09:00:21] la idea central es ajustar pesos a partir del error
+</code></pre>
+<p><strong>Advertencia realista.</strong> SAPI está pensado para voz cercana a un micrófono, no para audio de una sala con reverberación. La tasa de error con <em>line-in</em> de una grabación ambiental sube bastante. Para ese caso conviene un modelo tipo Whisper, no SAPI.</p>
+<h3 id="92-verificar-la-integridad-de-una-descarga">9.2 Verificar la integridad de una descarga</h3>
+<p><code>_sha256.py</code> solo hashea strings, pero el patrón se extiende a archivos en una línea:</p>
+<pre><code class="language-python">import hashlib
 
+def sha256_archivo(ruta, bloque=1 &lt;&lt; 20):
+    h = hashlib.sha256()
+    with open(ruta, "rb") as f:
+        for trozo in iter(lambda: f.read(bloque), b""):
+            h.update(trozo)
+    return h.hexdigest()
+
+print(sha256_archivo("ubuntu-24.04.iso"))
+</code></pre>
+<p>Comparar con el valor publicado por el proveedor. Si coincide, el archivo llegó intacto. Si no, se corrompió o fue alterado.</p>
+<h3 id="93-cifrar-un-apunte-con-aes-uso-responsable">9.3 Cifrar un apunte con AES (uso responsable)</h3>
+<p>El script <code>_aes.py</code> usa una clave fija. Para algo real hay que derivar la clave de una contraseña y autenticar el mensaje. Con <code>cryptography</code> y AES-GCM:</p>
+<pre><code class="language-python">import os
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+from cryptography.hazmat.primitives.kdf.scrypt import Scrypt
+
+def cifrar(mensaje: str, password: str) -&gt; bytes:
+    salt = os.urandom(16)
+    clave = Scrypt(salt=salt, length=32, n=2**14, r=8, p=1).derive(password.encode())
+    nonce = os.urandom(12)
+    return salt + nonce + AESGCM(clave).encrypt(nonce, mensaje.encode(), None)
+
+def descifrar(blob: bytes, password: str) -&gt; str:
+    salt, nonce, ct = blob[:16], blob[16:28], blob[28:]
+    clave = Scrypt(salt=salt, length=32, n=2**14, r=8, p=1).derive(password.encode())
+    return AESGCM(clave).decrypt(nonce, ct, None).decode()
+</code></pre>
+<p>Este código <strong>no está en el repositorio</strong>: es la versión correcta de lo que <code>_aes.py</code> ilustra, incluida para marcar la distancia entre demo y producción.</p>
+<h3 id="94-intercambio-de-claves-ecdh-sin-los-bugs">9.4 Intercambio de claves ECDH, sin los bugs</h3>
+<p>El objetivo de <code>_AES-256.py</code> es correcto; la implementación no. Un ECDH bien hecho comparte la <em>salt</em> por un canal público y deriva con HKDF:</p>
+<pre><code class="language-python">from cryptography.hazmat.primitives.asymmetric import ec
+from cryptography.hazmat.primitives.kdf.hkdf import HKDF
+from cryptography.hazmat.primitives import hashes
+
+a, b = ec.generate_private_key(ec.SECP256R1()), ec.generate_private_key(ec.SECP256R1())
+assert a.exchange(ec.ECDH(), b.public_key()) == b.exchange(ec.ECDH(), a.public_key())
+
+clave = HKDF(algorithm=hashes.SHA256(), length=32,
+             salt=b"contexto-compartido", info=b"aes-256-gcm"
+             ).derive(a.exchange(ec.ECDH(), b.public_key()))
+</code></pre>
+<p>La diferencia clave: la <code>salt</code> es un parámetro del protocolo, no un valor aleatorio generado por cada parte.</p>
+<h3 id="95-sumar-con-csje-desde-un-script">9.5 Sumar con CSJE desde un script</h3>
+<pre><code class="language-python">import sys, pathlib
+sys.path.append(str(pathlib.Path("versions/CSJE")))
+
+from sumador import sumar
+
+print(sumar(15, 27))   # 42
+</code></pre>
+<h3 id="96-auditar-el-workflow-detenido-sin-activarlo">9.6 Auditar el workflow detenido sin activarlo</h3>
+<pre><code class="language-bash">cd versions/cmdPbl
+cat .github/workflows/main.yml.stop
+# Verificar que no se renombre por accidente
+git status --porcelain 2&gt;/dev/null || echo "sin git local"
+</code></pre>
+<p>Si en algún momento se quisiera reactivar, primero habría que escribir <code>scriptAgrega.py</code>, <code>firma.py</code> y un <code>requirements.txt</code>, y sustituir el token por uno de permisos mínimos.</p>
+<hr/>
+<h2 id="10-calibracion">10. Calibración</h2>
+<p>No hay sensores, así que no hay calibración en el sentido físico. Hay dos procedimientos equivalentes:</p>
+<h3 id="101-calibracion-de-audio-speechtotextauxpy">10.1 Calibración de audio (SpeechToTextAuxPy)</h3>
+<p>La calidad del reconocimiento depende casi por completo del nivel de entrada. Procedimiento:</p>
+<ol>
+<li><strong>Panel de control de sonido</strong> → pestaña <strong>Grabación</strong>.</li>
+<li>Seleccionar el dispositivo (micrófono o <em>line-in</em>) → <strong>Propiedades</strong> → <strong>Niveles</strong>.</li>
+<li>Hablar o reproducir el audio al volumen normal de uso. El medidor debe llegar a <strong>60–80 %</strong> en los picos, sin tocar el rojo.</li>
+<li>Si satura (rojo), bajar la ganancia. Si apenas se mueve, subirla.</li>
+<li>Pestaña <strong>Mejoras</strong>: desactivar cancelación de eco y supresión de ruido si el audio ya viene limpio por cable; suelen recortar sílabas.</li>
+<li>Probar con una frase conocida y contar aciertos. Repetir el ajuste si la tasa es baja.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Ajuste</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No reconoce nada</td>
+<td>Subir nivel; verificar dispositivo predeterminado</td>
+</tr>
+<tr>
+<td>Reconoce palabras sueltas</td>
+<td>Subir nivel; acercar el micrófono</td>
+</tr>
+<tr>
+<td>Corta el final de las frases</td>
+<td>Bajar supresión de ruido</td>
+</tr>
+<tr>
+<td>Texto con ruido</td>
+<td>Bajar ganancia; usar entrada con mejor relación señal/ruido</td>
+</tr>
+</tbody>
+</table>
+<h3 id="102-validacion-de-algoritmos-encryppython">10.2 Validación de algoritmos (EncrypPython)</h3>
+<p>Para comprobar que un script hace lo que dice, se comparan vectores conocidos:</p>
+<table>
+<thead>
+<tr>
+<th>Algoritmo</th>
+<th>Vector de prueba</th>
+<th>Resultado esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base64</td>
+<td><code>hola</code></td>
+<td><code>aG9sYQ==</code></td>
+</tr>
+<tr>
+<td>Hex</td>
+<td><code>hola</code></td>
+<td><code>686f6c61</code></td>
+</tr>
+<tr>
+<td>MD5</td>
+<td><code>1234</code></td>
+<td><code>81dc9bdb52d04dc20036dbd8313ed055</code></td>
+</tr>
+<tr>
+<td>SHA-256</td>
+<td><code>hola</code></td>
+<td><code>b221d9dbb083a7f33428d7c2a3c1e8f...</code> (verificar con <code>sha256sum</code>)</td>
+</tr>
+<tr>
+<td>César (+1)</td>
+<td><code>hola</code></td>
+<td><code>ipmb</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-bash"># Vector de referencia con herramientas del sistema
+printf 'hola' | sha256sum
+printf 'hola' | base64
+printf '1234' | md5sum
+</code></pre>
+<p>Si el script no coincide con la herramienta del sistema, el script está mal. Ese es el test que falta en el repositorio.</p>
+<hr/>
+<h2 id="11-estado-de-madurez-y-limites">11. Estado de madurez y límites</h2>
+<h3 id="111-escala-de-madurez-usada">11.1 Escala de madurez usada</h3>
+<p><strong>Usable</strong> resuelve su problema con manejo de errores y documentación; <strong>didáctica</strong> enseña bien pero no es de producción; <strong>mínima</strong> funciona sin aportar valor; <strong>stub</strong> no ejecuta y se conserva como registro.</p>
+<h3 id="112-matriz-por-utilidad">11.2 Matriz por utilidad</h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>SpeechToTextAuxPy</th>
+<th>EncrypPython</th>
+<th>CSJE</th>
+<th>cmdPbl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resuelve un problema real</td>
+<td>Sí</td>
+<td>Parcial (enseñar)</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Manejo de errores</td>
+<td>Sí (3 códigos)</td>
+<td>No</td>
+<td>No</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Documentación</td>
+<td>Sí</td>
+<td>Mínima</td>
+<td>No</td>
+<td>Mínima</td>
+</tr>
+<tr>
+<td>Tests</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Empaquetado</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Configuración externa</td>
+<td>No (hardcodeada)</td>
+<td>No (hardcodeada)</td>
+<td>N/A</td>
+<td>Secretos</td>
+</tr>
+<tr>
+<td>Portable</td>
+<td>No (Windows)</td>
+<td>Sí</td>
+<td>Sí</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Mantenido</td>
+<td>Archivo</td>
+<td>Archivo</td>
+<td>Archivo</td>
+<td>Detenido</td>
+</tr>
+<tr>
+<td><strong>Nivel</strong></td>
+<td><strong>Usable</strong></td>
+<td><strong>Didáctica</strong></td>
+<td><strong>Mínima</strong></td>
+<td><strong>Stub</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="113-que-se-puede-usar-hoy">11.3 Qué se puede usar hoy</h3>
+<ul>
+<li><strong>SpeechToTextAuxPy</strong>, en Windows 10 con el paquete de voz instalado, para dictado o transcripción de audio cercano. Es la única con una experiencia de usuario completa.</li>
+<li><strong>EncrypPython</strong>, como material de estudio y para copiar funciones sueltas a scripts propios.</li>
+<li><strong>CSJE</strong>, para nada práctico; solo como referencia.</li>
+<li><strong>cmdPbl</strong>, para nada; está detenido.</li>
+</ul>
+<h3 id="114-deuda-tecnica-identificada">11.4 Deuda técnica identificada</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Deuda</th>
+<th>Impacto</th>
+<th>Dónde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Sin <code>if __name__ == "__main__"</code> en 15 scripts</td>
+<td>Importar ejecuta demos</td>
+<td>EncrypPython</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Claves <em>hardcodeadas</em></td>
+<td>Cifrado decorativo</td>
+<td><code>_aes.py</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Doble derivación PBKDF2</td>
+<td>Descifrado falla</td>
+<td><code>_AES-256.py</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><em>Salt</em> no compartida</td>
+<td>ECDH no converge</td>
+<td><code>_AES-256.py</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sin autenticación (CBC sin MAC)</td>
+<td>Mensajes manipulables</td>
+<td><code>_aes.py</code>, <code>_AES-256.py</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>César rompe con acentos y negativos</td>
+<td>Resultado incorrecto</td>
+<td><code>_cesar.py</code>, <code>_xxd.py</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>_rot13.py</code> no es ROT13</td>
+<td>Confusión</td>
+<td>EncrypPython</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Dos scripts duplicados</td>
+<td>Mantenimiento doble</td>
+<td><code>_ofusca.py</code>, <code>_cifrado_de_flujo_bytes.py</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Sin tests ni vectores</td>
+<td>Errores silenciosos</td>
+<td>Todo</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Dependencias no declaradas</td>
+<td><code>ImportError</code> en runtime</td>
+<td>3 scripts</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Workflow detenido con scripts ausentes</td>
+<td>No reproducible</td>
+<td>cmdPbl</td>
+</tr>
+<tr>
+<td>12</td>
+<td><code>signal.pause()</code> en bucle</td>
+<td>Excepción cada 500 ms</td>
+<td><code>main.py</code></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="12-seguridad">12. Seguridad</h2>
+<h3 id="121-regla-de-oro">12.1 Regla de oro</h3>
+<blockquote>
+<p><strong>Ningún script de <code>EncrypPython</code> debe proteger información real.</strong> Son demostraciones. Para producción usá <code>cryptography</code> con AES-GCM o ChaCha20-Poly1305, claves derivadas con Argon2id o scrypt, y una gestión de claves fuera del código.</p>
+</blockquote>
+<h3 id="122-clasificacion-honesta">12.2 Clasificación honesta</h3>
+<table>
+<thead>
+<tr>
+<th>Script</th>
+<th>Algoritmo</th>
+<th>Estado real</th>
+<th>Veredicto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_md5.py</code></td>
+<td>MD5</td>
+<td>Roto para seguridad (colisiones desde 2004)</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_sha256.py</code></td>
+<td>SHA-256</td>
+<td>Vigente para integridad</td>
+<td>Uso limitado</td>
+</tr>
+<tr>
+<td><code>_cesar.py</code></td>
+<td>César</td>
+<td>Trivial de romper</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_rot13.py</code></td>
+<td>XOR (mal nombrado)</td>
+<td>Trivial de romper</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_xor.py</code></td>
+<td>XOR 1 byte</td>
+<td>Trivial de romper</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_bin.py</code></td>
+<td>Inversión de bits</td>
+<td>Trivial de romper</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_transposicion.py</code></td>
+<td>Transposición</td>
+<td>Trivial de romper</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_ofusca.py</code></td>
+<td>Sustitución aleatoria</td>
+<td>No criptográfico</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_cifrado_de_flujo_bytes.py</code></td>
+<td>Sustitución aleatoria</td>
+<td>No criptográfico</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_base16.py</code></td>
+<td>Hex</td>
+<td>Codificación, no cifrado</td>
+<td>Uso legítimo</td>
+</tr>
+<tr>
+<td><code>_64.py</code></td>
+<td>Base64</td>
+<td>Codificación, no cifrado</td>
+<td>Uso legítimo</td>
+</tr>
+<tr>
+<td><code>_xxd.py</code></td>
+<td>César + hex</td>
+<td>Trivial</td>
+<td><strong>No usar</strong></td>
+</tr>
+<tr>
+<td><code>_aes.py</code></td>
+<td>AES-128-CBC</td>
+<td>Primitiva buena, construcción mala</td>
+<td>Solo demo</td>
+</tr>
+<tr>
+<td><code>_AES-256.py</code></td>
+<td>ECDH+AES-256-CBC</td>
+<td>Primitiva buena, bugs reales</td>
+<td>Solo demo</td>
+</tr>
+<tr>
+<td><code>_rsa.py</code></td>
+<td>RSA-2048-OAEP</td>
+<td>Correcto pero limitado a 214 bytes</td>
+<td>Uso con reservas</td>
+</tr>
+</tbody>
+</table>
+<h3 id="123-secretos">12.3 Secretos</h3>
+<ul>
+<li>El repositorio <strong>no contiene</strong> tokens, contraseñas ni claves privadas reales.</li>
+<li><code>cmdPbl</code> referencia <code>secrets.GH_TOKEN</code>, pero el valor no está en el snapshot.</li>
+<li><code>_AES-256.py</code> genera claves en memoria en cada ejecución; no las persiste.</li>
+<li><code>_rsa.py</code> genera un par nuevo por ejecución; no lo guarda.</li>
+<li>Ninguna clave de <code>_aes.py</code> (<code>b'EstaEsMiClave12'</code>) es un secreto: está publicada en el código y solo sirve para el ejemplo.</li>
+</ul>
+<h3 id="124-buenas-practicas-que-faltan">12.4 Buenas prácticas que faltan</h3>
+<p>Falta cifrado autenticado (AEAD), clave fuera del código, derivación de clave en todos los casos y borrado seguro. Sí hay IV/nonce único por mensaje en <code>_aes.py</code> y <code>_AES-256.py</code>.</p>
+<hr/>
+<h2 id="13-solucion-de-problemas">13. Solución de problemas</h2>
+<h3 id="131-speechtotextauxpy">13.1 SpeechToTextAuxPy</h3>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Causa probable</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pythonnet no está instalado</code></td>
+<td>Falta la dependencia</td>
+<td><code>pip install -r requirements.txt</code></td>
+</tr>
+<tr>
+<td><code>El idioma 'es-ES' no está soportado</code></td>
+<td>Paquete de voz ausente</td>
+<td>Configuración → Hora e idioma → Voz → Agregar voces</td>
+</tr>
+<tr>
+<td><code>No se encontró dispositivo de entrada de audio</code></td>
+<td>Micrófono desconectado o deshabilitado</td>
+<td>Configuración → Sonido → Administrar dispositivos</td>
+</tr>
+<tr>
+<td>No reconoce nada</td>
+<td>Nivel muy bajo o dispositivo equivocado</td>
+<td>Ver <a href="#101-calibración-de-audio-speechtotextauxpy">§10.1</a></td>
+</tr>
+<tr>
+<td><code>ModuleNotFoundError: No module named 'clr'</code></td>
+<td><code>pythonnet</code> mal instalado o <em>venv</em> inactivo</td>
+<td>Reactivar el <em>venv</em> y reinstalar</td>
+</tr>
+<tr>
+<td><code>System.Speech</code> no se encuentra</td>
+<td>.NET Framework &lt; 4.7.2 o SO no Windows</td>
+<td>Actualizar Windows; no hay soporte en Linux</td>
+</tr>
+<tr>
+<td>Caracteres raros en consola</td>
+<td>Página de códigos</td>
+<td><code>chcp 65001</code> (lo hace <code>run.bat</code>)</td>
+</tr>
+<tr>
+<td>El proceso no termina con <code>Ctrl+C</code></td>
+<td>Consola interceptando la señal</td>
+<td>Cerrar la ventana o <code>taskkill /PID &lt;pid&gt;</code></td>
+</tr>
+<tr>
+<td><code>ERROR: Error en callback de reconocimiento</code></td>
+<td>Resultado ya liberado</td>
+<td>Ignorar; es benigno, se reintenta en la próxima frase</td>
+</tr>
+</tbody>
+</table>
+<h3 id="132-encryppython">13.2 EncrypPython</h3>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Causa</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ModuleNotFoundError: Crypto</code></td>
+<td>Falta <code>pycryptodome</code></td>
+<td><code>pip install pycryptodome</code></td>
+</tr>
+<tr>
+<td><code>ModuleNotFoundError: cryptography</code></td>
+<td>Falta <code>cryptography</code></td>
+<td><code>pip install cryptography</code></td>
+</tr>
+<tr>
+<td><code>ValueError: Data must be padded</code></td>
+<td>Clave o IV incorrectos</td>
+<td>Verificar que la clave mida 16/24/32 bytes</td>
+</tr>
+<tr>
+<td><code>UnicodeDecodeError</code> al descifrar</td>
+<td>Clave distinta o texto corrupto</td>
+<td>Revisar la derivación de clave</td>
+</tr>
+<tr>
+<td><code>Secretos coinciden: False</code></td>
+<td>Bug conocido de <code>_AES-256.py</code></td>
+<td>Ver <a href="#54-detalle-de-los-tres-scripts-modernos">§5.4</a></td>
+</tr>
+<tr>
+<td>El script imprime nada más importarlo</td>
+<td>No hay guarda <code>__main__</code></td>
+<td>Copiar la función, no importar</td>
+</tr>
+<tr>
+<td><code>TypeError</code> en <code>_bin.py</code> con emoji</td>
+<td><code>format(valor, '08b')</code> solo admite 0–255</td>
+<td>Usar solo ASCII</td>
+</tr>
+</tbody>
+</table>
+<h3 id="133-general">13.3 General</h3>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Causa</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pip</code> instala en el Python del sistema</td>
+<td><em>venv</em> no activado</td>
+<td><code>source venv/bin/activate</code> o <code>venv\Scripts\activate</code></td>
+</tr>
+<tr>
+<td>Los acentos se ven mal en Windows</td>
+<td>Consola en CP850</td>
+<td><code>chcp 65001</code></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="14-diagrama-de-conexion">14. Diagrama de conexión</h2>
+<h3 id="141-ecosistema">14.1 Ecosistema</h3>
+<pre><code>SpeechToTextAuxPy ── USABLE     Windows 10 · pythonnet · SAPI/.NET · 444 líneas
+EncrypPython     ── DIDÁCTICA   15 scripts · stdlib + 2 librerías · 442 líneas
+CSJE             ── MÍNIMA      sumar(a, b) · 2 líneas
+cmdPbl           ── STUB        workflow .stop · sin scripts ni token
+</code></pre>
+<h3 id="142-cadena-de-audio-de-speechtotextauxpy">14.2 Cadena de audio de SpeechToTextAuxPy</h3>
+<pre><code> ┌──────────┐   onda      ┌──────────┐   PCM     ┌─────────────────────┐
+ │Micrófono │  acústica   │  ADC /   │  16 bit   │  Windows audio      │
+ │o line-in ├────────────▶│  codec   ├──────────▶│  dispositivo        │
+ └──────────┘             └──────────┘           │  predeterminado     │
+                                                 └──────────┬──────────┘
+                                                            │
+                                                            ▼
+                                     ┌──────────────────────────────────┐
+                                     │ System.Speech.Recognition        │
+                                     │ SpeechRecognitionEngine          │
+                                     │ + DictationGrammar (es-ES)       │
+                                     └──────────────┬───────────────────┘
+                                                    │ evento
+                                                    │ SpeechRecognized
+                                                    ▼
+                                     ┌──────────────────────────────────┐
+                                     │ pythonnet (clr)                  │
+                                     │ puente Python ↔ .NET             │
+                                     └──────────────┬───────────────────┘
+                                                    │
+                                                    ▼
+                                     ┌──────────────────────────────────┐
+                                     │ SapiEngine._on_speech_recognized │
+                                     │ args.Result.Text                 │
+                                     └──────────────┬───────────────────┘
+                                                    │
+                                                    ▼
+                                     ┌──────────────────────────────────┐
+                                     │ console_utils.print_recognized   │
+                                     │ [HH:MM:SS] texto                 │
+                                     └──────────────────────────────────┘
+</code></pre>
+<h3 id="143-mapa-criptografico">14.3 Mapa criptográfico</h3>
+<pre><code>EncrypPython (15 scripts)
+├── Codificación   Base16 · Base64 · xxd                  reversible
+├── Hash           MD5 · SHA-256                          un sentido
+├── Clásico        César · XOR · Bits · Transposición     quebrable
+├── Moderno        AES-128-CBC · AES-256-CBC + ECDH       con bugs
+│                  RSA-2048-OAEP · PBKDF2
+└── Ofuscación     _ofusca · _cifrado_de_flujo_bytes      no cripto
+
+* _rot13.py contiene una implementación de XOR, no ROT13.
+</code></pre>
+<p>Los diagramas están disponibles como SVG en <a href="docs/assets/"><code>docs/assets/</code></a>.</p>
+<hr/>
+<h2 id="15-estructura-del-repositorio">15. Estructura del repositorio</h2>
+<pre><code>utilidades-python/
+├── README.md · LICENSE
+├── docs/
+│   ├── datasheet.md · developer.md · REFERENCES.md · BITACORA.md
+│   └── assets/   ecosystem.svg · speech-pipeline.svg · crypto-taxonomy.svg
+└── versions/
+    ├── SpeechToTextAuxPy/   VERSION.md · README.md · requirements.txt · run.bat
+    │                        src/{main,sapi_engine,console_utils}.py
+    │                        docs/{datasheet,desarrollador}.md
+    ├── EncrypPython/        VERSION.md + 15 scripts _*.py
+    ├── CSJE/                VERSION.md · README.md · sumador.py
+    └── cmdPbl/              VERSION.md + .github/workflows/main.yml.stop
+</code></pre>
+<hr/>
+<h2 id="16-licencia-y-autor">16. Licencia y autor</h2>
+<p><strong>MIT License</strong> — Copyright (c) 2026 jmadasme. Ver <a href="LICENSE"><code>LICENSE</code></a>.</p>
+<p>Se puede usar, copiar, modificar y distribuir con atribución. El software se entrega <strong>sin garantía</strong>, y dado el estado de las utilidades, esa cláusula no es un formalismo.</p>
+<p><strong>Autor:</strong> jmadasme
+<strong>Repositorios de origen:</strong> <code>jmadasme/SpeechToTextAuxPy</code>, <code>jmadasme/EncrypPython</code>, <code>jmadasme/CSJE</code>, <code>jmadasme/cmdPbl</code>
+<strong>Contexto:</strong> portfolio <code>AG.CreadorContenido</code></p>
+<hr/>
+<h2 id="17-referencias">17. Referencias</h2>
+<p>Documentación completa en <a href="https://github.com/jmadasme/utilidades-python/blob/main/REFERENCES.md"><code>docs/REFERENCES.md</code></a>.</p>
+<ul>
+<li><strong>SAPI / System.Speech</strong> — Microsoft Learn, <em>System.Speech.Recognition</em></li>
+<li><strong>pythonnet</strong> — puente Python ↔ .NET, <code>clr.AddReference</code></li>
+<li><strong>colorama</strong> — secuencias ANSI en consolas Windows</li>
+<li><strong>PyCryptodome</strong> — AES, RSA, OAEP</li>
+<li><strong>cryptography</strong> — hazmat, PBKDF2, ECDH, Scrypt</li>
+<li><strong>NIST FIPS 197</strong> — AES</li>
+<li><strong>NIST SP 800-38A</strong> — modos de operación</li>
+<li><strong>RFC 8017</strong> — PKCS #1 v2.2 (RSA-OAEP)</li>
+<li><strong>RFC 4648</strong> — Base16, Base32, Base64</li>
+<li><strong>FIPS 180-4</strong> — SHA-2</li>
+<li><strong>RFC 2104</strong> — HMAC</li>
+</ul>
+<hr/>
+<p align="center">
+<sub>utilidades-python · 2026</sub>
+</p></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">Lo que no funcionó</div><h2>Los tropiezos, documentados</h2><p class="section-sub">Las primeras versiones existen para que estos errores no se repitan: cada una dejó una decisión de diseño verificable.</p></div><div class="fail-grid reveal"><div class="fail"><div class="v">EncrypPython</div><h3>ECDH que no converge</h3><p>En _AES-256.py cada parte genera una sal distinta dentro de obtener_secreto_compartido, por lo que secret_key_1 y secret_key_2 nunca coinciden y el propio script imprime 'Secretos coinciden: False'. El README documenta el fallo y la corrección esperada: compartir la sal por el protocolo y derivar con HKDF.</p></div><div class="fail"><div class="v">EncrypPython</div><h3>PBKDF2 aplicado dos veces</h3><p>descifrar_aes() vuelve a derivar con PBKDF2 sobre una clave que ya estaba derivada, de modo que el unpad falla o devuelve texto basura. El README identifica la doble derivación como causa y deja el script como ejemplo de error, sin presentarlo como una implementación cifrada utilizable.</p></div><div class="fail"><div class="v">SpeechToTextAuxPy</div><h3>signal.pause() inexistente en Windows</h3><p>El bucle principal llama a signal.pause(), que no existe en Windows; cada iteración lanza AttributeError, la captura y continúa tras dormir 500 ms. La herramienta funciona, pero con una excepción por ciclo. El README registra el comportamiento y lo describe como deuda técnica visible en la bitácora.</p></div><div class="fail"><div class="v">cmdPbl</div><h3>Workflow detenido</h3><p>cmdPbl conserva un workflow main.yml.stop y referencias a scriptAgrega.py y firma.py que no están en el repositorio; además, el destino es privado y requiere token. No puede ejecutarse tal como se publica. El README lo presenta como esqueleto y no como automatización operativa.</p></div></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">Ficha de evaluación</div><h2>Cómo se mide este proyecto</h2><p class="section-sub">Seis criterios con la misma escala en todo el catálogo, para comparar sin marketing.</p></div><div class="rating-head reveal"><div class="rating-avg">3.5<small>/5</small></div><div><strong>Madurez global</strong><p>Instantánea honesta de utilidades dispares: una herramienta de voz funcional y varios ejercicios didácticos que valen más como lección sobre errores que como software reutilizable.</p></div></div><div class="rating reveal"><div class="rating-row"><div class="rating-name">Madurez</div><div class="rating-bar"><i style="width:40%"></i></div><div class="rating-score">2/5</div><div class="rating-note">Una utilidad usable y tres experimentos con fallos documentados; sin pruebas.</div></div><div class="rating-row"><div class="rating-name">Reproducibilidad</div><div class="rating-bar"><i style="width:60%"></i></div><div class="rating-score">3/5</div><div class="rating-note">SpeechToTextAuxPy requiere Windows y voz instalada; el resto son scripts sueltos.</div></div><div class="rating-row"><div class="rating-name">Documentación</div><div class="rating-bar"><i style="width:100%"></i></div><div class="rating-score">5/5</div><div class="rating-note">README y bitácora explican cada fallo, su causa y la corrección esperada.</div></div><div class="rating-row"><div class="rating-name">Honestidad de límites</div><div class="rating-bar"><i style="width:100%"></i></div><div class="rating-score">5/5</div><div class="rating-note">Declara claves hardcodeadas, errores criptográficos sin corregir y piezas privadas ausentes.</div></div><div class="rating-row"><div class="rating-name">Valor demostrativo</div><div class="rating-bar"><i style="width:60%"></i></div><div class="rating-score">3/5</div><div class="rating-note">Buen ejemplo de deuda técnica y de cuándo un script no debe usarse.</div></div><div class="rating-row"><div class="rating-name">Facilidad de despliegue</div><div class="rating-bar"><i style="width:60%"></i></div><div class="rating-score">3/5</div><div class="rating-note">La utilidad de voz es simple en Windows; las demás carecen de empaquetado.</div></div></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">Preguntas típicas</div><h2>Lo que suelen preguntar</h2></div><div class="faq reveal"><details><summary>¿Qué es este proyecto?</summary><p>Una instantánea de cuatro utilidades: dictado por voz con SAPI en Windows, scripts didácticos de criptografía, una función de suma y un esqueleto de automatización.</p></details><details><summary>¿Cuál se puede usar directamente?</summary><p>SpeechToTextAuxPy, en Windows 10 con pythonnet y el motor de voz del sistema; no guarda audio, no elige dispositivo y no añade puntuación.</p></details><details><summary>¿Los scripts de cifrado son seguros?</summary><p>No. _AES-256.py no converge en ECDH, descifrar_aes() aplica PBKDF2 dos veces y hay CBC sin MAC; el README los presenta como ejercicios con errores documentados.</p></details><details><summary>¿Qué se puede reutilizar?</summary><p>El dictado continuo en español y los códigos de salida de SpeechToTextAuxPy, y los scripts de cifrado como material de estudio; cmdPbl no es ejecutable porque faltan scripts y el repo destino es privado.</p></details></div></div></section>
 <section class="cta"><div class="wrap"><div class="cta-box reveal">
   <div class="kicker">Siguiente paso</div><h2>¿Te animás?</h2>
   <p>Usá esto como base y referencia para utilidades python. Este proyecto es la prueba de que se puede hacer con componentes reales.</p>
