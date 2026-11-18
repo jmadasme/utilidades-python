@@ -205,6 +205,7 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:
 
 </style>
 <link rel="stylesheet" href="assets/community.css?v=1">
+<link href="rec/player.css?v=1" rel="stylesheet"/>
 </head>
 <body>
 <header class="nav"><div class="wrap nav-in">
@@ -214,7 +215,8 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:
     <a href="#versiones">Versiones</a>
       <a href="#acceso">Acceso</a>
     <a href="#stack">Stack</a>
-    <a href="#docs">Docs</a>
+    <a href="#video">Video</a>
+<a href="#docs">Docs</a>
     <a href="#comunidad">Comunidad</a>
     <a class="btn btn-ghost" style="padding:9px 15px" href="/software/">← Software</a>
   </nav>
@@ -238,7 +240,46 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:
   </div>
 </div></section>
 
-<section class="stats"><div class="wrap stats-grid"><div class="stat"><div class="stat-num">4</div><div class="stat-label">versiones</div></div><div class="stat"><div class="stat-num">1</div><div class="stat-label">pública</div></div><div class="stat"><div class="stat-num">3</div><div class="stat-label">privadas</div></div><div class="stat"><div class="stat-num">1</div><div class="stat-label">licencia</div></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">El concepto</div><h2>Qué es y por qué existe</h2></div><div class="rich reveal"><p>Colección de cuatro utilidades independientes en Python, conservadas como instantánea de experimentos: dictado por voz con SAPI en Windows, scripts didácticos de criptografía, una función mínima de suma y un esqueleto de automatización para un repositorio privado. Solo SpeechToTextAuxPy está publicado; las demás se solicitan.</p><p>El interés está en el contraste entre una herramienta usable y varios ejercicios con fallos conocidos. SpeechToTextAuxPy funciona en Windows 10 con pythonnet y el motor de voz del sistema, sin guardar audio ni elegir dispositivo. Los scripts de cifrado, en cambio, documentan errores de derivación de claves y de padding que el README expone sin corregir, lo que convierte al repositorio en un caso de estudio sobre límites y deuda técnica.</p></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">El proyecto en detalle</div><h2>Documentación preservada</h2><p class="section-sub">El README original, completo y en su contexto.</p></div><div class="detail rich reveal">
+<section class="stats"><div class="wrap stats-grid"><div class="stat"><div class="stat-num">4</div><div class="stat-label">versiones</div></div><div class="stat"><div class="stat-num">1</div><div class="stat-label">pública</div></div><div class="stat"><div class="stat-num">3</div><div class="stat-label">privadas</div></div><div class="stat"><div class="stat-num">1</div><div class="stat-label">licencia</div></div></div></section>
+<section class="section tight rec-section" id="video" style="--accent:#2E7DFF;--accent2:#14F195">
+<div class="wrap">
+<div class="rec-kicker">REC · VIDEO · 2:52</div>
+<h2 class="rec-h2">Utilidades Python: dictado local, cuatro niveles</h2>
+<p class="rec-lead">Un snapshot de portfolio con cuatro utilidades de madurez dispar: dictado continuo en español sobre SAPI, scripts didácticos de criptografía, un sumador mínimo y un workflow detenido. El recorrido se concentra en SpeechToTextAuxPy, la única versión pública incluida.</p>
+<div class="rec-banner">
+<span class="rec-banner-icon">📋</span>
+<strong>Puedes copiar y pegar los comandos del video desde el video !!!</strong>
+<span>Pausá, seleccioná el texto de la terminal y copiá.</span>
+</div>
+<div class="rec-shell">
+<div class="rec-bar"><i></i><i></i><i></i><span class="rec-title">Utilidades Python: dictado local, cuatro niveles · asciinema</span><span class="rec-rec"><b></b>REC</span></div>
+<div class="rec-screen-wrap">
+<div class="rec-screen" id="rec-screen"></div>
+<div class="rec-poster" id="rec-poster">
+<div class="rec-kicker">ASCIINEMA · 2:52</div>
+<h3>Utilidades Python: dictado local, cuatro niveles</h3>
+<p>Un snapshot de portfolio con cuatro utilidades de madurez dispar: dictado continuo en español sobre SAPI, scripts didácticos de criptografía, un sumador mínimo y un workflow detenido. El recorrido se concentra en SpeechToTextAuxPy, la única versión pública incluida.</p>
+<div class="rec-poster-meta">utilidades-python · código real</div>
+<button class="rec-btn rec-primary" id="rec-start" type="button">▶ Reproducir</button>
+</div>
+</div>
+<div class="rec-controls">
+<button class="rec-btn rec-primary" id="rec-play" type="button">▶ Reproducir</button>
+<button class="rec-btn" id="rec-restart" type="button">↺ Reiniciar</button>
+<input class="rec-progress" id="rec-range" type="range" min="0" max="1000" value="0" aria-label="Progreso"/>
+<span class="rec-time" id="rec-time">0:00 / 2:52</span>
+<select class="rec-speed" id="rec-speed" aria-label="Velocidad"><option value="1">1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select>
+<button class="rec-btn" id="rec-full" type="button" title="Pantalla completa">⛶</button>
+<button class="rec-btn" id="rec-copy" type="button">⧉ Copiar comandos</button>
+<a class="rec-download" href="rec/utilidades-python.cast" download>descargar .cast</a>
+</div>
+</div>
+<p class="rec-note">Los fragmentos son del código real de versions/SpeechToTextAuxPy. El repositorio es un snapshot de portfolio, no un paquete instalable; solo esa utilidad está incluida y requiere Windows, .NET Framework 4.7.2+ y el paquete de voz es-ES.</p>
+<div class="rec-chapters"><span class="rec-chip"><b>0:06</b> EL ARCHIVO</span><span class="rec-chip"><b>0:23</b> ARQUITECTURA</span><span class="rec-chip"><b>0:36</b> PUENTE PYTHON–.NET</span><span class="rec-chip"><b>0:50</b> EL MOTOR</span><span class="rec-chip"><b>1:04</b> GRAMÁTICA ABIERTA</span><span class="rec-chip"><b>1:17</b> EL EVENTO</span><span class="rec-chip"><b>1:31</b> ESCUCHA CONTINUA</span><span class="rec-chip"><b>1:44</b> PARADA LIMPIA</span><span class="rec-chip"><b>1:59</b> SEÑALES</span><span class="rec-chip"><b>2:12</b> CONSOLA</span><span class="rec-chip"><b>2:25</b> CÓMO EJECUTARLO</span></div>
+</div>
+</section>
+
+<section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">El concepto</div><h2>Qué es y por qué existe</h2></div><div class="rich reveal"><p>Colección de cuatro utilidades independientes en Python, conservadas como instantánea de experimentos: dictado por voz con SAPI en Windows, scripts didácticos de criptografía, una función mínima de suma y un esqueleto de automatización para un repositorio privado. Solo SpeechToTextAuxPy está publicado; las demás se solicitan.</p><p>El interés está en el contraste entre una herramienta usable y varios ejercicios con fallos conocidos. SpeechToTextAuxPy funciona en Windows 10 con pythonnet y el motor de voz del sistema, sin guardar audio ni elegir dispositivo. Los scripts de cifrado, en cambio, documentan errores de derivación de claves y de padding que el README expone sin corregir, lo que convierte al repositorio en un caso de estudio sobre límites y deuda técnica.</p></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">El proyecto en detalle</div><h2>Documentación preservada</h2><p class="section-sub">El README original, completo y en su contexto.</p></div><div class="detail rich reveal">
 <p><strong>Cuatro utilidades Python de madurez muy distinta, documentadas con el mismo nivel de detalle y distinto nivel de promesa.</strong></p>
 <p><code>SpeechToTextAuxPy</code> · <code>EncrypPython</code> · <code>CSJE</code> · <code>cmdPbl</code></p>
 <hr/>
@@ -1890,5 +1931,7 @@ cmdPbl           ── STUB        workflow .stop · sin scripts ni token
 <script>window.PORTFOLIO_COMMUNITY={account:"jmadasme",repo:"utilidades-python",coinNamespace:"jmadasme-utilidades-python-coins-v1",faqs:[{"q": "¿Cuál es la utilidad principal?", "a": "SpeechToTextAuxPy es la más completa; EncrypPython es una colección de scripts; CSJE es mínima y cmdPbl es un stub."}, {"q": "¿SpeechToText funciona en Linux?", "a": "No. Usa SAPI/System.Speech de Windows a través de pythonnet."}, {"q": "¿EncrypPython es seguro para producción?", "a": "No. Es material educativo: varios algoritmos son clásicos o inseguros. Usá librerías auditadas para producción."}, {"q": "¿Por qué incluir cmdPbl?", "a": "Porque es parte de la historia real del autor. Se documenta como incompleto en lugar de ocultarlo."}, {"q": "¿Puedo usar estas utilidades por separado?", "a": "Sí. Cada carpeta es independiente y conserva su propio README."}]};</script>
 <script src="assets/community.js?v=2" defer></script>
 
+<script defer src="rec/utilidades-python.cast.js?v=1"></script>
+<script defer src="rec/player.js?v=1"></script>
 </body>
 </html>
